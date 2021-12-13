@@ -12,6 +12,7 @@ create table club(
 	nickName text,
 	foundYear INTEGER,
 	ctName TEXT REFERENCES country(ctName)
+	officialSite text
 );
 
 create table rounds(
