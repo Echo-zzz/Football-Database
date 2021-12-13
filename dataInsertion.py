@@ -29,7 +29,7 @@ def readTable(path):
 def insertStadium(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO stadium (sName, ctName, capacity, Year of Built) VALUES ({}, {}, {}, {}, {})".format(df.iloc[row]['sName'],df.iloc[row]['ctName'],df.iloc[row]['capacity'], df.iloc[row]['Year of Built'])
+        insertion = "INSERT INTO stadium (sName, ctName, capacity, Year of Built) VALUES ({}, {}, {}, {}, {})".format(df.iloc[row]['sName'],df.iloc[row]['ctName'],df.iloc[row]['capacity'], df.iloc[row]['yearOfBuilt'])
         s.execute_query(connection, insertion)
     
     return
@@ -37,7 +37,7 @@ def insertStadium(connection, df):
 def insertClub(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO club (cName, ctName, Nickname, found Date, official site) VALUES ({}, {}, {}, {}, {} {})".format(df.iloc[row]['cName'],df.iloc[row]['ctName'],df.iloc[row]['Nickname'], df.iloc[row]['found Date'], df.iloc[row]['official site'])
+        insertion = "INSERT INTO club (cName, ctName, Nickname, found Date, official site) VALUES ({}, {}, {}, {}, {} {})".format(df.iloc[row]['cName'],df.iloc[row]['ctName'],df.iloc[row]['nickname'], df.iloc[row]['foundYear'], df.iloc[row]['officialSite'])
         s.execute_query(connection, insertion)
     
     return
