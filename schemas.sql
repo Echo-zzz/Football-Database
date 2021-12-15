@@ -83,6 +83,11 @@ create table player(
 	DOB INTEGER
 );
 
+create table referee(
+	ID INTEGER PRIMARY KEY REFERENCES people(ID),
+	rName text
+)
+
 
 create table belong(
 	ID INTEGER REFERENCES people(ID),
