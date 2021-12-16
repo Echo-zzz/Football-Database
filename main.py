@@ -52,6 +52,7 @@ class main(Frame):
 
     def event(self, index):
 
+        #插这儿 插这儿 快插这里
         global SQL
         if index == 0:
             print("1")
@@ -59,6 +60,7 @@ class main(Frame):
         if index == 1:
             print("2")
             SQL = "SELECT * from event"
+        #插上面点
 
         data = self.cursor.execute(SQL)
 
