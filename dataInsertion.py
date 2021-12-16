@@ -71,20 +71,26 @@ def insertAttend(connection, df):
 def insertBelong(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO belong (ID,ctName ) VALUES ({}, {})".format(df.iloc[row]['AAA'],df.iloc[row]['BBB'])
+        insertion = "INSERT INTO belong (ID,ctName) VALUES ({}, {})".format(df.iloc[row]['AAA'],df.iloc[row]['BBB'])
         execute_query(connection, insertion)
 
 def insertCountry(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO country (ctName) VALUES ({})".format(df.iloc[row]['AAA'])
+        insertion = "INSERT OR IGNORE INTO country (ctName) VALUES ({})".format(df.iloc[row]['ctName'])
         execute_query(connection, insertion)
 
 
 def insertEvent(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO event (eName,season,cName) VALUES ({},{},{})".format(df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'])
+        insertion = "INSERT INTO event (eName,season,cName) VALUES ({},{},{})".format(df.iloc[row]['eName'],df.iloc[row]['season'],df.iloc[row]['cName'])
+        execute_query(connection, insertion)
+
+
+def insertLeague(connection, df):
+    for row in range(df.shape[0]):
+        insertion = "INSERT INTO league (eName,ctName,size) VALUES ('{}','{}',{})".format(df.iloc[row]['eName'],df.iloc[row]['season'], int(df.iloc[row]['size']))
         execute_query(connection, insertion)
 
 
@@ -99,22 +105,21 @@ def insertFriendly(connection, df):
 def insertHomeCourt(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO homeCourt (sName,cName) VALUES ({},{})".format(df.iloc[row]['AAA'],df.iloc[row]['AAA'])
+        insertion = "INSERT INTO homeCourt (sName,cName) VALUES ({},{})".format(df.iloc[row]['sName'],df.iloc[row]['host'])
         execute_query(connection, insertion)
     
 
-def insertHostStadium(connection, df):
+#两个dataframe,一个比赛记录，一个stadiums和俱乐部名字
+def insertHostStadium(connection, match, stadiums):
     
-    for row in range(df.shape[0]):
-        insertion = "INSERT INTO hostStadium (host,sName) VALUES ({},{})".format(df.iloc[row]['AAA'],df.iloc[row]['AAA'])
+    for row in range(match.shape[0]):
+        club = match.iloc[row]['Home Team']
+        stadium = stadium.stadiums.loc[stadiums['host'] == club]['sName']
+        insertion = "INSERT INTO hostStadium (host,sName) VALUES ({},{})".format(club, stadium)
         execute_query(connection, insertion)
 
 
-def insertLeague(connection, df):
-    
-    for row in range(df.shape[0]):
-        insertion = "INSERT INTO league (eName,ctName,size) VALUES ({},{},{})".format(df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'])
-        execute_query(connection, insertion)
+
     
 
 
@@ -138,17 +143,25 @@ def insertParticipate(connection, df):
         insertion = "INSERT INTO participate (cName,eName) VALUES ({},{})".format(df.iloc[row]['AAA'],df.iloc[row]['AAA'])
         execute_query(connection, insertion)
 
-def insertPeople(connection, df, type):
+
+#先输入一遍所有people，然后Player和referee都按顺序reference 
+def insertPeople(connection, num):
     
-    for row in range(df.shape[0]):
-        insertion = "INSERT INTO people (ID) VALUES ({})".format(df.iloc[row][type])
+    for row in range(num):
+        insertion = "INSERT INTO people () VALUES ()"
         execute_query(connection, insertion)
 
+#输入Players
 def insertPlayer(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO player (ID,cName,pName,DOB) VALUES ({},{},{},{})".format(df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'])
+        insertion = "INSERT INTO player (ID,cName,pName,DOB) VALUES ({},{},{},{})".format(row, df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'])
         execute_query(connection, insertion)
+
+#从Player最后一个的ID开始给referee id
+def insertReferee(connection, df, startNum):
+    for row in range(df.shape[0]):
+        insertion = "INSERT INTO referee (ID, rName) VALUES({}, '{}')".format(row+startNum , df.iloc[row]['rName'])
 
 def insertRounds(connection, df):
     
