@@ -165,7 +165,7 @@ def insertParticipate(connection, df):
 def insertPeople(connection, num):
     
     for row in range(num):
-        insertion = "INSERT INTO people (ID) VALUES ( {} )".format(row+1)
+        insertion = "INSERT INTO people () VALUES ()"
         execute_query(connection, insertion)
 
 #输入Players
