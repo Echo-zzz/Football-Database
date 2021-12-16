@@ -80,13 +80,13 @@ create table player(
 	ID INTEGER PRIMARY KEY REFERENCES people(ID),
 	cName text REFERENCES club(cName),
 	pName text,
-	DOB INTEGER
+	DOB TEXT
 );
 
 create table referee(
 	ID INTEGER PRIMARY KEY REFERENCES people(ID),
 	rName text
-)
+);
 
 
 create table belong(
