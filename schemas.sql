@@ -11,7 +11,7 @@ create table club(
 	cName text PRIMARY KEY,
 	nickName text,
 	foundYear INTEGER,
-	ctName TEXT REFERENCES country(ctName)
+	ctName TEXT REFERENCES country(ctName),
 	officialSite text
 );
 
