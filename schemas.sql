@@ -90,7 +90,7 @@ create table referee(
 
 
 create table belong(
-	ID INTEGER REFERENCES people(ID),
+	ID INTEGER REFERENCES player(ID),
 	ctName text REFERENCES country(ctName),
 	PRIMARY KEY(ID,ctName)
 );
@@ -112,7 +112,6 @@ create table homeCourt(
 	cName text REFERENCES club(cName),
 	PRIMARY KEY(sName, cName)
 );
-
 
 
 
