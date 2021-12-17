@@ -38,17 +38,37 @@ class main(Frame):
         self.button2 = Button(self.master, text='Go', command=self.reply)
         self.button2.place(relx=0.4, rely=0.4, relwidth=0.214, relheight=0.095)
 
+    def SELECT2(self):
+        self.button3 = Button(self.jump, text='Go', command=self.reply2)
+        self.button3.place(relx=0.4, rely=0.5, relwidth=0.214, relheight=0.095)
+
+    def reply2(self):
+        self.eventPage(0)
+
     def reply(self):
         if self.pull.get() == self.stringvar[0]:
-            self.eventPage(0)
+            self.chosePage()
         if self.pull.get() == self.stringvar[1]:
             self.eventPage(1)
 
     def eventPage(self, inx):
         self.top = Tk()
         self.top.title("output")
-        self.event(inx)
         self.top.geometry('1000x500')
+        self.event(inx)
+
+    def chosePage(self):
+        self.jump = Tk()
+        self.jump.title("chose a player")
+        self.jump.geometry('500x500')
+        self.stringvar2 = StringVar()
+        self.pull2 = Combobox(self.jump, text=self.stringvar2, state='readonly')
+        self.cursor.execute("SELECT pName FROM player;")
+        tableName = self.cursor.fetchall()
+        self.pull2["value"] = tableName
+        self.pull2.current(0)
+        self.pull2.place(relx=0.2, rely=0.2, relwidth=0.214, relheight=0.055)
+        self.SELECT2()
 
     def event(self, index):
 
@@ -56,10 +76,11 @@ class main(Frame):
         global SQL
         if index == 0:
             print("1")
-            SQL = "SELECT * from league"
+            SQL = "SELECT * from player where pName ='%s'" % self.pull2.get()
         if index == 1:
             print("2")
             SQL = "SELECT * from event"
+
         #插上面点
 
         data = self.cursor.execute(SQL)
