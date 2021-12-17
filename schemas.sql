@@ -44,10 +44,10 @@ create table league(
 CREATE TABLE matchTable(
 	host text REFERENCES club(cName),
 	visit text REFERENCES club(cName),
-	matchDate INTEGER,
+	matchDate text,
 	eName text REFERENCES event(eName),
-	awayShots INTEGER,
-	homeShots INTEGER,
+	awayGoals INTEGER,
+	homeGoals INTEGER,
 	awayBooks INTEGER,
 	homeBooks INTEGER,
 	PRIMARY KEY(host, visit, matchDate, eName)
@@ -71,7 +71,7 @@ create table stadium(
 
 
 create table hostStadium(
-	host text PRIMARY KEY REFERENCES club(cName),
+	match INTEGER PRIMARY KEY REFERENCES match(matchID),
 	sName text REFERENCES stadium(sName)
 );
 

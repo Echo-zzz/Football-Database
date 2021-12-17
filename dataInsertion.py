@@ -136,7 +136,7 @@ def insertHostStadium(connection, match, stadiums):
     for row in range(match.shape[0]):
         club = match.iloc[row]['HomeTeam']
         stadium = stadiums.loc[stadiums['host'] == club]
-        insertion = "INSERT OR IGNORE INTO hostStadium (host,sName) VALUES ('{}','{}')".format(club, stadium.iloc[0]['sName'])
+        insertion = "INSERT INTO hostStadium (match,sName) VALUES ('{}','{}')".format(match.iloc[row]['id'], stadium.iloc[0]['sName'])
         execute_query(connection, insertion)
 #这里也是跨表格数据
 def insertMatch(connection, df):
@@ -149,14 +149,14 @@ def insertMatch(connection, df):
 def insertMatchTable(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO matchTable (host,visit,matchDate,eName,awayShots,homeShots,awayBooks,homeBooks) VALUES ({},{},{},{},{},{},{},{}".format(df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'],df.iloc[row]['AAA'],)
+        insertion = "INSERT INTO matchTable (host,visit,matchDate,eName,awayGoal,homeGoal,awayBooks,homeBooks) VALUES ('{}','{}','{}','{}',{},{},{},{})".format(df.iloc[row]['HomeTeam'],df.iloc[row]['AwayTeam'],df.iloc[row]['Date'],df.iloc[row]['eName'],df.iloc[row]['FTAG'],df.iloc[row]['HTHG'],df.iloc[row]['ABP'],df.iloc[row]['HBP'],)
         execute_query(connection, insertion)
 
 
 def insertParticipate(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO participate (cName,eName) VALUES ({},{})".format(df.iloc[row]['AAA'],df.iloc[row]['AAA'])
+        insertion = "INSERT OR IGNORE INTO participate (cName,eName) VALUES ({},{})".format(df.iloc[row]['HomeTeam'],df.iloc[row]['eName'])
         execute_query(connection, insertion)
 
 
