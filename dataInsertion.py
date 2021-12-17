@@ -26,39 +26,36 @@ def execute_query(connection, query):
     try:
         cursor.execute(query)
         connection.commit()
-        print("it works")
     except Error as e:
         print(f"The error '{e}' occurred")
 
 
 def main():
-    dbName="Football.db"
+    dbName="2.db"
     connection=createConnection(dbName)
-    #这里全都是能跑的 用我发的新的csv打包文件
-    #check一下csv里面是不是我们想要的内容
-    #除了friendly,Tournamnet, matchtable,participate  其他应该都ok了
-    
-    #insertCountry(connection, readTable("ctName.csv"))
-    #insertClub(connection, readTable("ClubStadium.csv"))
-    #insertStadium(connection, readTable("ClubStadium.csv"))
-    #insertEvent(connection, readTable("ChampionEventSize.csv"))
-    #insertPeople(connection, 556)  #556 是hardcode的数字
-    #insertPlayer(connection, readTable("playersALL.csv"))
-    #insertReferee(connection, readTable("referee.csv"))
-    #insertRounds(connection,readTable("ChampionEventSize.csv"))
-    #insertMatch(connection, readTable("EnglandMatch.csv"))
-    #insertAttend(connection,readTable("EnglandMatch.csv"),readTable("referee.csv"))
-    #insertBelong(connection, readTable("playersALL.csv"))
-    #insertLeague(connection, readTable("ChampionEventSize.csv"))
-    #insertHomeCourt(connection, readTable("ClubStadium.csv"))
-    #insertHostStadium(connection, readTable("EnglandMatch.csv"), readTable("ClubStadium.csv"))
+
+    insertCountry(connection, readTable("ctName.csv"))
+    insertClub(connection, readTable("ClubStadium.csv"))
+    insertStadium(connection, readTable("ClubStadium.csv"))
+    insertEvent(connection, readTable("ChampionEventSize.csv"))
+    insertPeople(connection, 556)  #556 是hardcode的数字
+    insertPlayer(connection, readTable("playersALL.csv"))
+    insertReferee(connection, readTable("referee.csv"))
+    insertRounds(connection,readTable("ChampionEventSize.csv"))
+    insertMatch(connection, readTable("EnglandMatch.csv"))
+    insertAttend(connection,readTable("EnglandMatch.csv"),readTable("referee.csv"))
+    insertBelong(connection, readTable("playersALL.csv"))
+    insertLeague(connection, readTable("ChampionEventSize.csv"))
+    insertHomeCourt(connection, readTable("ClubStadium.csv"))
+    insertHostStadium(connection, readTable("EnglandMatch.csv"), readTable("ClubStadium.csv"))
+    insertMatchTable( connection, readTable("EnglandMatch.csv"))
+    insertParticipate(connection, readTable("EnglandMatch.csv"))
     connection.close()
-    
+
     
 
     
 def readTable(path):
-    #不用转encoding了  我把csv全部转utf-8编码了
     dataframe = pd.read_csv(path)
     return dataframe
 
@@ -67,7 +64,7 @@ def insertStadium(connection, df):
     
     for row in range(df.shape[0]):
         
-        insertion = "INSERT INTO stadium (sName, ctName, capacity,yearOfBuilt) VALUES ('{}', '{}', {}, {});".format(df.iloc[row]['sName'],df.iloc[row]['ctName'],df.iloc[row]['capacity'], df.iloc[row]['yearOfBuilt'])
+        insertion = "INSERT OR IGNORE INTO stadium (sName, ctName, capacity,yearOfBuilt) VALUES ('{}', '{}', {}, {});".format(df.iloc[row]['sName'],df.iloc[row]['ctName'],df.iloc[row]['capacity'], df.iloc[row]['yearOfBuilt'])
 
         execute_query(connection, insertion)
 
@@ -149,14 +146,14 @@ def insertMatch(connection, df):
 def insertMatchTable(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO matchTable (host,visit,matchDate,eName,awayGoal,homeGoal,awayBooks,homeBooks) VALUES ('{}','{}','{}','{}',{},{},{},{})".format(df.iloc[row]['HomeTeam'],df.iloc[row]['AwayTeam'],df.iloc[row]['Date'],df.iloc[row]['eName'],df.iloc[row]['FTAG'],df.iloc[row]['HTHG'],df.iloc[row]['ABP'],df.iloc[row]['HBP'],)
+        insertion = "INSERT INTO matchTable (host,visit,matchDate,eName,awayGoals,homeGoals,awayBooks,homeBooks) VALUES ('{}','{}','{}','{}',{},{},{},{})".format(df.iloc[row]['HomeTeam'],df.iloc[row]['AwayTeam'],df.iloc[row]['Date'],df.iloc[row]['eName'],df.iloc[row]['FTAG'],df.iloc[row]['HTHG'],df.iloc[row]['AR'],df.iloc[row]['HR'])
         execute_query(connection, insertion)
 
 
 def insertParticipate(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT OR IGNORE INTO participate (cName,eName) VALUES ({},{})".format(df.iloc[row]['HomeTeam'],df.iloc[row]['eName'])
+        insertion = "INSERT OR IGNORE INTO participate (cName,eName) VALUES ('{}','{}')".format(df.iloc[row]['HomeTeam'],df.iloc[row]['eName'])
         execute_query(connection, insertion)
 
 
@@ -165,7 +162,7 @@ def insertParticipate(connection, df):
 def insertPeople(connection, num):
     
     for row in range(num):
-        insertion = "INSERT INTO people () VALUES ()"
+        insertion = "INSERT INTO people (ID) VALUES (NULL)"
         execute_query(connection, insertion)
 
 #输入Players
