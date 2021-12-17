@@ -37,7 +37,7 @@ def main():
     #这里全都是能跑的 用我发的新的csv打包文件
     #check一下csv里面是不是我们想要的内容
     #除了friendly,Tournamnet, matchtable,participate  其他应该都ok了
-    
+    """
     insertCountry(connection, readTable("ctName.csv"))
     insertClub(connection, readTable("ClubStadium.csv"))
     insertStadium(connection, readTable("ClubStadium.csv"))
@@ -54,6 +54,13 @@ def main():
     insertHostStadium(connection, readTable("EnglandMatch.csv"), readTable("ClubStadium.csv"))
     insertMatchTable( connection, readTable("EnglandMatch.csv"))
     insertParticipate(connection, readTable("EnglandMatch.csv"))
+    """
+
+    insertMatch(connection, readTable('championLeague.csv'))
+    insertMatchTable(connection, readTable('championLeague.csv'))
+    insertAttend(connection,readTable("championLeague.csv"),readTable("referee.csv"))
+    insertHostStadium(connection, readTable("championLeague.csv"), readTable("ClubStadium.csv"))
+    insertParticipate(connection, readTable("championLeague.csv"))
     connection.close()
     
     
