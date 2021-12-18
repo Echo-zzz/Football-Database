@@ -180,7 +180,7 @@ def insertPeople(connection, num):
 def insertPlayer(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO player (ID,cName,pName,DOB) VALUES ({},'{}','{}',{})".format(df.iloc[row]['id'], df.iloc[row]['cName'],df.iloc[row]['pName'],df.iloc[row]['DOB'])
+        insertion = "INSERT INTO player (ID,cName,pName,DOB) VALUES ({},'{}','{}','{}')".format(df.iloc[row]['id'], df.iloc[row]['cName'],df.iloc[row]['pName'],df.iloc[row]['DOB'])
         execute_query(connection, insertion)
 
 #我用了最原始的最保险的办法  直接在referee.csv前面排个序
