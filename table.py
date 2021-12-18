@@ -75,9 +75,8 @@ class Club(Frame):
         self.list["columns"] = column
         for i in column:
             self.list.column(i, anchor="center")
-
-        for i in column:
             self.list.heading(i, text=i)
+
         count = 1
         for row in data:
             print(row)
