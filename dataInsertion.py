@@ -31,14 +31,14 @@ def execute_query(connection, query):
 
 
 def main():
-    dbName="2.db"
+    dbName="Football.db"
     connection=createConnection(dbName)
-
+    #插入英冠
     insertCountry(connection, readTable("ctName.csv"))
     insertClub(connection, readTable("ClubStadium.csv"))
     insertStadium(connection, readTable("ClubStadium.csv"))
     insertEvent(connection, readTable("ChampionEventSize.csv"))
-    insertPeople(connection, 556)  #556 是hardcode的数字
+    insertPeople(connection, 563)  
     insertPlayer(connection, readTable("playersALL.csv"))
     insertReferee(connection, readTable("referee.csv"))
     insertRounds(connection,readTable("ChampionEventSize.csv"))
@@ -50,6 +50,17 @@ def main():
     insertHostStadium(connection, readTable("EnglandMatch.csv"), readTable("ClubStadium.csv"))
     insertMatchTable( connection, readTable("EnglandMatch.csv"))
     insertParticipate(connection, readTable("EnglandMatch.csv"))
+    #插入欧冠
+    insertMatch(connection, readTable('championLeague.csv'))
+    insertMatchTable(connection, readTable('championLeague.csv'))
+    insertAttend(connection,readTable("championLeague.csv"),readTable("referee.csv"))
+    insertHostStadium(connection, readTable("championLeague.csv"),      readTable("ClubStadium.csv"))
+    insertParticipate(connection, readTable("championLeague.csv"))
+    
+    extra1="INSERT INTO event (eName,season,cName) VALUES ('UEFA Champions League','2019','Bayern Munich')"
+    execute_query(connection, extra1)
+    extra2="INSERT INTO tournament (eName) VALUES ('UEFA Champions League')"
+    execute_query(connection, extra2)
     connection.close()
 
     
@@ -146,7 +157,7 @@ def insertMatch(connection, df):
 def insertMatchTable(connection, df):
     
     for row in range(df.shape[0]):
-        insertion = "INSERT INTO matchTable (host,visit,matchDate,eName,awayGoals,homeGoals,awayBooks,homeBooks) VALUES ('{}','{}','{}','{}',{},{},{},{})".format(df.iloc[row]['HomeTeam'],df.iloc[row]['AwayTeam'],df.iloc[row]['Date'],df.iloc[row]['eName'],df.iloc[row]['FTAG'],df.iloc[row]['HTHG'],df.iloc[row]['AR'],df.iloc[row]['HR'])
+        insertion = "INSERT INTO matchTable (host,visit,matchDate,eName,awayGoals,homeGoals,awayBooks,homeBooks) VALUES ('{}','{}','{}','{}',{},{},{},{})".format(df.iloc[row]['HomeTeam'],df.iloc[row]['AwayTeam'],df.iloc[row]['Date'],df.iloc[row]['eName'],df.iloc[row]['FTHG'],df.iloc[row]['FTAG'],df.iloc[row]['AR'],df.iloc[row]['HR'])
         execute_query(connection, insertion)
 
 
