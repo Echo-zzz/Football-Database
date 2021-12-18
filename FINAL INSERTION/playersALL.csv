@@ -1,0 +1,537 @@
+id,pName,DOB,ctName,cName,league_name
+1,P. Aubameyang,1989/6/18,Gabon,Arsenal,English Premier League
+2,B. Leno,1992/3/4,Germany,Arsenal,English Premier League
+3,A. Lacazette,1991/5/28,France,Arsenal,English Premier League
+4,Willian,1988/8/9,Brazil,Arsenal,English Premier League
+5,L. Torreira,1996/2/11,Uruguay,Arsenal,English Premier League
+6,G. Xhaka,1992/9/27,Switzerland,Arsenal,English Premier League
+7,David Luiz,1987/4/22,Brazil,Arsenal,English Premier League
+8,Sokratis,1988/6/9,Greece,Arsenal,English Premier League
+9,K. Tierney,1997/6/5,Scotland,Arsenal,English Premier League
+10,S. Mustafi,1992/4/17,Germany,Arsenal,English Premier League
+11,A. Maitland-Niles,1997/8/29,England,Arsenal,English Premier League
+12,M. Elneny,1992/7/11,Egypt,Arsenal,English Premier League
+13,B. Saka,2001/9/5,England,Arsenal,English Premier League
+14,R. Holding,1995/9/20,England,Arsenal,English Premier League
+15,C. Chambers,1995/1/20,England,Arsenal,English Premier League
+16,W. Saliba,2001/3/24,France,Arsenal,English Premier League
+17,Gabriel Martinelli,2001/6/18,Brazil,Arsenal,English Premier League
+18,R. Nelson,1999/12/10,England,Arsenal,English Premier League
+19,J. Willock,1999/8/20,England,Arsenal,English Premier League
+20,E. Nketiah,1999/5/30,England,Arsenal,English Premier League
+21,E. Smith Rowe,2000/7/28,England,Arsenal,English Premier League
+22,M. Macey,1994/9/9,England,Arsenal,English Premier League
+23,D. Iliev,1995/2/25,North Macedonia,Arsenal,English Premier League
+24,F. Balogun,2001/7/3,England,Arsenal,English Premier League
+25,J. Grealish,1995/9/10,England,Aston Villa,English Premier League
+26,T. Heaton,1986/4/15,England,Aston Villa,English Premier League
+27,J. McGinn,1994/10/18,Scotland,Aston Villa,English Premier League
+28,M. Targett,1995/9/18,England,Aston Villa,English Premier League
+29,O. Watkins,1995/12/30,England,Aston Villa,English Premier League
+30,Wesley,1996/11/26,Brazil,Aston Villa,English Premier League
+31,M. Samatta,1992/12/13,Tanzania,Aston Villa,English Premier League
+32,Douglas Luiz,1998/5/9,Brazil,Aston Villa,English Premier League
+33,M. Cash,1997/8/7,England,Aston Villa,English Premier League
+34,T. Mings,1993/3/13,England,Aston Villa,English Premier League
+35,A. El Ghazi,1995/5/3,Netherlands,Aston Villa,English Premier League
+36,M. Nakamba,1994/1/19,Zimbabwe,Aston Villa,English Premier League
+37,Trezeguet,1994/10/1,Egypt,Aston Villa,English Premier League
+38,C. Hourihane,1991/2/2,Republic of Ireland,Aston Villa,English Premier League
+39,K. Hause,1995/7/16,England,Aston Villa,English Premier League
+40,E. Konsa,1997/10/23,England,Aston Villa,English Premier League
+41,A. Elmohamady,1987/9/9,Egypt,Aston Villa,English Premier League
+42,J. Steer,1992/9/23,England,Aston Villa,English Premier League
+43,N. Taylor,1989/2/7,Wales,Aston Villa,English Premier League
+44,H. Lansbury,1990/10/12,England,Aston Villa,English Premier League
+45,K. Davis,1998/2/13,England,Aston Villa,English Premier League
+46,J. Ramsey,2001/5/21,England,Aston Villa,English Premier League
+47,D. Revan,2000/9/19,England,Aston Villa,English Premier League
+48,L. Brunt,2000/11/6,England,Aston Villa,English Premier League
+49,M. Tait,2001/1/29,England,Aston Villa,English Premier League
+50,C. Rowe,1999/9/2,England,Aston Villa,English Premier League
+51,M. Ryan,1992/4/8,Australia,Brighton,English Premier League
+52,L. Trossard,1994/12/4,Belgium,Brighton,English Premier League
+53,L. Dunk,1991/11/21,England,Brighton,English Premier League
+54,N. Maupay,1996/8/14,France,Brighton,English Premier League
+55,A. Lallana,1988/5/10,England,Brighton,English Premier League
+56,A. Mac Allister,1998/12/24,Argentina,Brighton,English Premier League
+57,B. White,1997/10/8,England,Brighton,English Premier League
+58,Y. Bissouma,1996/8/30,Mali,Brighton,English Premier League
+59,A. Webster,1995/1/4,England,Brighton,English Premier League
+60,D. Burn,1992/5/9,England,Brighton,English Premier League
+61,S. March,1994/7/20,England,Brighton,English Premier League
+62,D. Stephens,1989/6/12,England,Brighton,English Premier League
+63,Bernardo,1995/5/14,Brazil,Brighton,English Premier League
+64,F. Andone,1993/4/11,Romania,Brighton,English Premier League
+65,A. Jahanbakhsh,1993/8/11,Iran,Brighton,English Premier League
+66,C. Walton,1995/11/9,England,Brighton,English Premier League
+67,A. Connolly,2000/1/28,Republic of Ireland,Brighton,English Premier League
+68,S. Alzate,1998/9/8,Colombia,Brighton,English Premier League
+69,J. Molumby,1999/8/6,Republic of Ireland,Brighton,English Premier League
+70,J. Steele,1990/8/18,England,Brighton,English Premier League
+71,T. Lamptey,2000/9/30,England,Brighton,English Premier League
+72,Robert Sanchez,1997/11/18,Spain,Brighton,English Premier League
+73,R. Yapi,2000/7/13,France,Brighton,English Premier League
+74,M. Sanders,1999/1/4,England,Brighton,English Premier League
+75,J. Weir,2002/1/31,England,Brighton,English Premier League
+76,J. Furlong,2002/6/7,Republic of Ireland,Brighton,English Premier League
+77,A. Cochrane,2000/4/21,England,Brighton,English Premier League
+78,N. Pope,1992/4/19,England,Burnley,English Premier League
+79,J. Tarkowski,1992/11/19,England,Burnley,English Premier League
+80,B. Mee,1989/9/23,England,Burnley,English Premier League
+81,D. McNeil,1999/11/22,England,Burnley,English Premier League
+82,A. Westwood,1990/4/1,England,Burnley,English Premier League
+83,C. Wood,1991/12/7,New Zealand,Burnley,English Premier League
+84,C. Taylor,1993/9/18,England,Burnley,English Premier League
+85,J. Cork,1989/6/25,England,Burnley,English Premier League
+86,A. Barnes,1989/10/30,England,Burnley,English Premier League
+87,J. Rodriguez,1989/7/29,England,Burnley,English Premier League
+88,M. Lowton,1989/6/9,England,Burnley,English Premier League
+89,R. Brady,1992/1/14,Republic of Ireland,Burnley,English Premier League
+90,E. Pieters,1988/8/7,Netherlands,Burnley,English Premier League
+91,P. Bardsley,1985/6/28,Scotland,Burnley,English Premier League
+92,J. Brownhill,1995/12/19,England,Burnley,English Premier League
+93,K. Long,1990/8/18,Republic of Ireland,Burnley,English Premier League
+94,B. Peacock-Farrell,1996/10/29,Northern Ireland,Burnley,English Premier League
+95,J. Dunne,1997/10/19,Republic of Ireland,Burnley,English Premier League
+96,W. Norris,1993/8/12,England,Burnley,English Premier League
+97,A. Koiki,1999/8/22,England,Burnley,English Premier League
+98,J. Benson,1999/12/5,England,Burnley,English Premier League
+99,M. Thompson,2002/2/9,England,Burnley,English Premier League
+100,A. Glennon,1999/11/26,England,Burnley,English Premier League
+101,M. Goodridge,1999/9/13,England,Burnley,English Premier League
+102,B. Thomas,2001/1/30,England,Burnley,English Premier League
+103,R. Harker,2000/3/6,England,Burnley,English Premier League
+104,J. Mumbongo,1999/1/9,Sweden,Burnley,English Premier League
+105,M. Elva-Fountaine,2000/11/14,England,Burnley,English Premier League
+106,K. Havertz,1999/6/11,Germany,Chelsea,English Premier League
+107,T. Werner,1996/3/6,Germany,Chelsea,English Premier League
+108,H. Ziyech,1993/3/19,Morocco,Chelsea,English Premier League
+109,Thiago Silva,1984/9/22,Brazil,Chelsea,English Premier League
+110,Jorginho,1991/12/20,Italy,Chelsea,English Premier League
+111,Kepa,1994/10/3,Spain,Chelsea,English Premier League
+112,C. Pulisic,1998/9/18,United States,Chelsea,English Premier League
+113,B. Chilwell,1996/12/21,England,Chelsea,English Premier League
+114,Marcos Alonso,1990/12/28,Spain,Chelsea,English Premier League
+115,M. Mount,1999/1/10,England,Chelsea,English Premier League
+116,K. Zouma,1994/10/27,France,Chelsea,English Premier League
+117,A. Christensen,1996/4/10,Denmark,Chelsea,English Premier League
+118,Emerson,1994/8/3,Italy,Chelsea,English Premier League
+119,O. Giroud,1986/9/30,France,Chelsea,English Premier League
+120,T. Abraham,1997/10/2,England,Chelsea,English Premier League
+121,R. Loftus-Cheek,1996/1/23,England,Chelsea,English Premier League
+122,R. Barkley,1993/12/5,England,Chelsea,English Premier League
+123,V. Moses,1990/12/12,Nigeria,Chelsea,English Premier League
+124,R. James,1999/12/8,England,Chelsea,English Premier League
+125,F. Tomori,1997/12/19,England,Chelsea,English Premier League
+126,A. Baba,1994/7/2,Ghana,Chelsea,English Premier League
+127,M. van Ginkel,1992/12/1,Netherlands,Chelsea,English Premier League
+128,W. Caballero,1981/9/28,Argentina,Chelsea,English Premier League
+129,C. Hudson-Odoi,2000/11/7,England,Chelsea,English Premier League
+130,D. Drinkwater,1990/3/5,England,Chelsea,English Premier League
+131,B. Gilmour,2001/6/11,Scotland,Chelsea,English Premier League
+132,M. Miazga,1995/7/19,United States,Chelsea,English Premier League
+133,W. Zaha,1992/11/10,Ivory Coast,Crystal Palace,English Premier League
+134,M. Batshuayi,1993/10/2,Belgium,Crystal Palace,English Premier League
+135,G. Cahill,1985/12/19,England,Crystal Palace,English Premier League
+136,P. van Aanholt,1990/8/29,Netherlands,Crystal Palace,English Premier League
+137,A. Townsend,1991/7/16,England,Crystal Palace,English Premier League
+138,J. Ayew,1991/9/11,Ghana,Crystal Palace,English Premier League
+139,M. Meyer,1995/9/18,Germany,Crystal Palace,English Premier League
+140,J. Tomkins,1989/3/29,England,Crystal Palace,English Premier League
+141,M. Sakho,1990/2/13,France,Crystal Palace,English Premier League
+142,J. Ward,1989/10/29,England,Crystal Palace,English Premier League
+143,J. McCarthy,1990/11/12,Republic of Ireland,Crystal Palace,English Premier League
+144,E. Eze,1998/6/29,England,Crystal Palace,English Premier League
+145,W. Hennessey,1987/1/24,Wales,Crystal Palace,English Premier League
+146,J. McArthur,1987/10/7,Scotland,Crystal Palace,English Premier League
+147,M. Kelly,1990/4/27,England,Crystal Palace,English Premier League
+148,J. Schlupp,1992/12/23,Ghana,Crystal Palace,English Premier League
+149,S. Dann,1987/2/14,England,Crystal Palace,English Premier League
+150,C. Benteke,1990/12/3,Belgium,Crystal Palace,English Premier League
+151,N. Ferguson,2000/10/6,England,Crystal Palace,English Premier League
+152,C. Wickham,1993/3/31,England,Crystal Palace,English Premier League
+153,S. Henderson,1988/5/2,Republic of Ireland,Crystal Palace,English Premier League
+154,T. Mitchell,1999/9/1,England,Crystal Palace,English Premier League
+155,R. Inniss,1995/6/5,England,Crystal Palace,English Premier League
+156,N. Kirby,2000/1/31,England,Crystal Palace,English Premier League
+157,B. Pierrick,2001/12/10,England,Crystal Palace,English Premier League
+158,G. McGregor,1999/1/9,England,Crystal Palace,English Premier League
+159,S. Woods,1998/9/11,England,Crystal Palace,English Premier League
+160,N. Tavares,1999/1/17,Croatia,Crystal Palace,English Premier League
+161,L. Digne,1993/7/20,France,Everton,English Premier League
+162,Allan,1991/1/8,Brazil,Everton,English Premier League
+163,Richarlison,1997/5/10,Brazil,Everton,English Premier League
+164,J. Pickford,1994/3/7,England,Everton,English Premier League
+165,D. Calvert-Lewin,1997/3/16,England,Everton,English Premier League
+166,J. Gbamin,1995/9/25,Ivory Coast,Everton,English Premier League
+167,M. Keane,1993/1/11,England,Everton,English Premier League
+168,A. Iwobi,1996/5/3,Nigeria,Everton,English Premier League
+169,M. Holgate,1996/10/22,England,Everton,English Premier League
+170,F. Delph,1989/11/21,England,Everton,English Premier League
+171,J. Kenny,1997/3/15,England,Everton,English Premier League
+172,T. Walcott,1989/3/16,England,Everton,English Premier League
+173,T. Davies,1998/6/30,England,Everton,English Premier League
+174,Y. Bolasie,1989/5/24,DR Congo,Everton,English Premier League
+175,C. Tosun,1991/6/7,Turkey,Everton,English Premier League
+176,M. Kean,2000/2/28,Italy,Everton,English Premier League
+177,B. Baningime,1998/9/9,DR Congo,Everton,English Premier League
+178,A. Gordon,2001/2/24,England,Everton,English Premier League
+179,E. Simms,2001/1/5,England,Everton,English Premier League
+180,K. John,2001/2/13,England,Everton,English Premier League
+181,J. Branthwaite,2002/6/27,England,Everton,English Premier League
+182,L. Gibson,2000/7/19,England,Everton,English Premier League
+183,A. Areola,1993/2/27,France,Fulham,English Premier League
+184,K. Tete,1995/10/9,Netherlands,Fulham,English Premier League
+185,M. Lemina,1993/9/1,Gabon,Fulham,English Premier League
+186,T. Cairney,1991/1/20,Scotland,Fulham,English Premier League
+187,Ivan Cavaleiro,1993/10/18,Portugal,Fulham,English Premier League
+188,J. Bryan,1993/9/17,England,Fulham,English Premier League
+189,A. Knockaert,1991/11/20,France,Fulham,English Premier League
+190,A. Robinson,1997/8/8,United States,Fulham,English Premier League
+191,O. Aina,1996/10/8,Nigeria,Fulham,English Premier League
+192,H. Reed,1995/1/27,England,Fulham,English Premier League
+193,M. Hector,1992/7/19,Jamaica,Fulham,English Premier League
+194,B. Decordova-Reid,1993/2/2,Jamaica,Fulham,English Premier League
+195,S. Johansen,1991/1/8,Norway,Fulham,English Premier League
+196,K. McDonald,1988/11/4,Scotland,Fulham,English Premier League
+197,D. Odoi,1988/5/27,Belgium,Fulham,English Premier League
+198,A. Kamara,1995/3/7,France,Fulham,English Premier League
+199,M. Le Marchand,1989/10/11,France,Fulham,English Premier League
+200,T. Ream,1987/10/5,United States,Fulham,English Premier League
+201,N. Kebano,1992/3/10,DR Congo,Fulham,English Premier League
+202,J. Onomah,1997/4/27,England,Fulham,English Premier League
+203,J. Opoku,1998/10/14,England,Fulham,English Premier League
+204,S. Jasper,2000/9/13,England,Fulham,English Premier League
+205,J. Mundle-Smith,1999/12/17,England,Fulham,English Premier League
+206,J. Stansfield,2002/11/24,England,Fulham,English Premier League
+207,F. Carvalho,2002/8/30,England,Fulham,English Premier League
+208,T. Abraham,2000/12/28,England,Fulham,English Premier League
+209,T. Francois,2000/7/16,Australia,Fulham,English Premier League
+210,J. Harris,1999/9/4,England,Fulham,English Premier League
+211,Rodrigo,1991/3/6,Spain,Leeds,English Premier League
+212,R. Koch,1996/7/17,Germany,Leeds,English Premier League
+213,K. Phillips,1995/12/2,England,Leeds,English Premier League
+214,L. Ayling,1991/8/25,England,Leeds,English Premier League
+215,J. Harrison,1996/11/20,England,Leeds,English Premier League
+216,L. Cooper,1991/8/30,Scotland,Leeds,English Premier League
+217,M. Klich,1990/6/13,Poland,Leeds,English Premier League
+218,S. Dallas,1991/4/19,Northern Ireland,Leeds,English Premier League
+219,E. Alioski,1992/2/12,North Macedonia,Leeds,English Premier League
+220,B. Douglas,1989/9/4,Scotland,Leeds,English Premier League
+221,P. Bamford,1993/9/5,England,Leeds,English Premier League
+222,T. Roberts,1999/1/12,Wales,Leeds,English Premier League
+223,G. Berardi,1988/8/21,Switzerland,Leeds,English Premier League
+224,A. Forshaw,1991/10/8,England,Leeds,English Premier League
+225,I. Meslier,2000/3/2,France,Leeds,English Premier League
+226,C. Summerville,2001/10/30,Netherlands,Leeds,English Premier League
+227,J. Shackleton,1999/10/8,England,Leeds,English Premier League
+228,L. Davis,2000/1/12,England,Leeds,English Premier League
+229,J. Grot,1998/3/13,Netherlands,Leeds,English Premier League
+230,I. Poveda,2000/2/9,England,Leeds,English Premier League
+231,P. Struijk,1999/8/11,Netherlands,Leeds,English Premier League
+232,J. Gelhardt,2002/5/4,England,Leeds,English Premier League
+233,C. Drameh,2001/12/8,England,Leeds,English Premier League
+234,A. McCalmont,2000/3/25,Northern Ireland,Leeds,English Premier League
+235,R. Gotts,1999/11/9,England,Leeds,English Premier League
+236,O. Bouy,1993/6/11,Netherlands,Leeds,English Premier League
+237,E. Caprile,2001/8/25,Italy,Leeds,English Premier League
+238,M. Bogusz,2001/8/22,Poland,Leeds,English Premier League
+239,O. Casey,2000/12/19,England,Leeds,English Premier League
+240,C. Cresswell,2002/8/17,England,Leeds,English Premier League
+241,J. Vardy,1987/1/11,England,Leicester,English Premier League
+242,Ricardo Pereira,1993/10/6,Portugal,Leicester,English Premier League
+243,W. Ndidi,1996/12/16,Nigeria,Leicester,English Premier League
+244,K. Schmeichel,1986/11/5,Denmark,Leicester,English Premier League
+245,Y. Tielemans,1997/5/7,Belgium,Leicester,English Premier League
+246,J. Maddison,1996/11/23,England,Leicester,English Premier League
+247,J. Evans,1988/1/3,Northern Ireland,Leicester,English Premier League
+248,H. Barnes,1997/12/9,England,Leicester,English Premier League
+249,T. Castagne,1995/12/5,Belgium,Leicester,English Premier League
+250,I. Slimani,1988/6/18,Algeria,Leicester,English Premier League
+251,D. Praet,1994/5/14,Belgium,Leicester,English Premier League
+252,M. Albrighton,1989/11/18,England,Leicester,English Premier League
+253,Adrien Silva,1989/3/15,Portugal,Leicester,English Premier League
+254,D. Gray,1996/6/28,England,Leicester,English Premier League
+255,N. Mendy,1992/6/23,France,Leicester,English Premier League
+256,K. Iheanacho,1996/10/3,Nigeria,Leicester,English Premier League
+257,H. Choudhury,1997/10/1,England,Leicester,English Premier League
+258,D. Ward,1993/6/22,Wales,Leicester,English Premier League
+259,J. Justin,1998/2/23,England,Leicester,English Premier League
+260,D. Amartey,1994/12/21,Ghana,Leicester,English Premier League
+261,W. Morgan,1984/1/21,Jamaica,Leicester,English Premier League
+262,C. Fuchs,1986/4/7,Austria,Leicester,English Premier League
+263,R. Ghezzal,1992/5/9,Algeria,Leicester,English Premier League
+264,M. James,1991/7/22,England,Leicester,English Premier League
+265,S. Hughes,1997/4/15,England,Leicester,English Premier League
+266,L. Thomas,2001/6/10,England,Leicester,English Premier League
+267,K. Dewsbury-Hall,1998/9/6,England,Leicester,English Premier League
+268,V. van Dijk,1991/7/8,Netherlands,Liverpool,English Premier League
+269,M. Salah,1992/6/15,Egypt,Liverpool,English Premier League
+270,T. Alexander-Arnold,1998/10/7,England,Liverpool,English Premier League
+271,A. Robertson,1994/3/11,Scotland,Liverpool,English Premier League
+272,Roberto Firmino,1991/10/2,Brazil,Liverpool,English Premier League
+273,J. Henderson,1990/6/17,England,Liverpool,English Premier League
+274,G. Wijnaldum,1990/11/11,Netherlands,Liverpool,English Premier League
+275,J. Gomez,1997/5/23,England,Liverpool,English Premier League
+276,X. Shaqiri,1991/10/10,Switzerland,Liverpool,English Premier League
+277,J. Milner,1986/1/4,England,Liverpool,English Premier League
+278,A. Oxlade-Chamberlain,1993/8/15,England,Liverpool,English Premier League
+279,L. Karius,1993/6/22,Germany,Liverpool,English Premier League
+280,H. Wilson,1997/3/22,Wales,Liverpool,English Premier League
+281,D. Origi,1995/4/18,Belgium,Liverpool,English Premier League
+282,K. Tsimikas,1996/5/12,Greece,Liverpool,English Premier League
+283,R. Brewster,2000/4/1,England,Liverpool,English Premier League
+284,N. Phillips,1997/3/21,England,Liverpool,English Premier League
+285,N. Williams,2001/4/13,Wales,Liverpool,English Premier League
+286,B. Woodburn,1999/10/15,Wales,Liverpool,English Premier League
+287,H. Elliott,2003/4/4,England,Liverpool,English Premier League
+288,S. van den Berg,2001/12/20,Netherlands,Liverpool,English Premier League
+289,C. Jones,2001/1/30,England,Liverpool,English Premier League
+290,C. Kelleher,1998/11/23,Republic of Ireland,Liverpool,English Premier League
+291,K. De Bruyne,1991/6/28,Belgium,Man City,English Premier League
+292,Ederson,1993/8/17,Brazil,Man City,English Premier League
+293,R. Sterling,1994/12/8,England,Man City,English Premier League
+294,A. Laporte,1994/5/27,France,Man City,English Premier League
+295,Bernardo Silva,1994/8/10,Portugal,Man City,English Premier League
+296,K. Walker,1990/5/28,England,Man City,English Premier League
+297,R. Mahrez,1991/2/21,Algeria,Man City,English Premier League
+298,Fernandinho,1985/5/4,Brazil,Man City,English Premier League
+299,Gabriel Jesus,1997/4/3,Brazil,Man City,English Premier League
+300,B. Mendy,1994/7/17,France,Man City,English Premier League
+301,O. Zinchenko,1996/12/15,Ukraine,Man City,English Premier League
+302,J. Stones,1994/5/28,England,Man City,English Premier League
+303,P. Foden,2000/5/28,England,Man City,English Premier League
+304,Z. Steffen,1995/4/2,United States,Man City,English Premier League
+305,P. Roberts,1997/2/5,England,Man City,English Premier League
+306,T. Adarabioyo,1997/9/24,England,Man City,English Premier League
+307,S. Carson,1985/9/3,England,Man City,English Premier League
+308,P. Sandler,1997/2/10,Netherlands,Man City,English Premier League
+309,M. Smith,1999/11/22,Wales,Man City,English Premier League
+310,C. Gomes,2000/7/23,France,Man City,English Premier League
+311,T. Harwood-Bellis,2002/1/30,England,Man City,English Premier League
+312,T. Doyle,2001/10/17,England,Man City,English Premier League
+313,Bruno Fernandes,1994/9/8,Portugal,Man United,English Premier League
+314,P. Pogba,1993/3/15,France,Man United,English Premier League
+315,De Gea,1990/11/7,Spain,Man United,English Premier League
+316,M. Rashford,1997/10/31,England,Man United,English Premier League
+317,A. Martial,1995/12/5,France,Man United,English Premier League
+318,A. Wan-Bissaka,1997/11/26,England,Man United,English Premier League
+319,D. van de Beek,1997/4/18,Netherlands,Man United,English Premier League
+320,H. Maguire,1993/3/5,England,Man United,English Premier League
+321,L. Shaw,1995/7/12,England,Man United,English Premier League
+322,Fred,1993/3/5,Brazil,Man United,English Premier League
+323,D. Henderson,1997/3/12,England,Man United,English Premier League
+324,S. Romero,1987/2/22,Argentina,Man United,English Premier League
+325,S. McTominay,1996/12/8,Scotland,Man United,English Premier League
+326,E. Bailly,1994/4/12,Ivory Coast,Man United,English Premier League
+327,C. Smalling,1989/11/22,England,Man United,English Premier League
+328,M. Greenwood,2001/10/1,England,Man United,English Premier League
+329,D. James,1997/11/10,Wales,Man United,English Premier League
+330,O. Ighalo,1989/6/16,Nigeria,Man United,English Premier League
+331,J. Lingard,1992/12/15,England,Man United,English Premier League
+332,B. Williams,2000/9/3,England,Man United,English Premier League
+333,Andreas Pereira,1996/1/1,Brazil,Man United,English Premier League
+334,P. Jones,1992/2/21,England,Man United,English Premier League
+335,M. Rojo,1990/3/20,Argentina,Man United,English Premier League
+336,A. Tuanzebe,1997/11/14,England,Man United,English Premier League
+337,T. Fosu-Mensah,1998/1/2,Netherlands,Man United,English Premier League
+338,L. Grant,1983/1/27,England,Man United,English Premier League
+339,E. Laird,2001/8/5,England,Man United,English Premier League
+340,T. Mengi,2002/4/30,England,Man United,English Premier League
+341,E. Galbraith,2001/5/11,Northern Ireland,Man United,English Premier League
+342,A. Saint-Maximin,1997/3/12,France,Newcastle,English Premier League
+343,R. Fraser,1994/2/24,Scotland,Newcastle,English Premier League
+344,C. Wilson,1992/2/27,England,Newcastle,English Premier League
+345,J. Lascelles,1993/11/11,England,Newcastle,English Premier League
+346,I. Hayden,1995/3/22,England,Newcastle,English Premier League
+347,M. Ritchie,1989/9/10,Scotland,Newcastle,English Premier League
+348,J. Shelvey,1992/2/27,England,Newcastle,English Premier League
+349,D. Yedlin,1993/7/9,United States,Newcastle,English Premier League
+350,C. Clark,1989/9/26,Republic of Ireland,Newcastle,English Premier League
+351,P. Dummett,1991/9/26,Wales,Newcastle,English Premier League
+352,J. Hendrick,1992/1/31,Republic of Ireland,Newcastle,English Premier League
+353,J. Lewis,1998/1/25,Northern Ireland,Newcastle,English Premier League
+354,E. Krafth,1994/8/2,Sweden,Newcastle,English Premier League
+355,A. Carroll,1989/1/6,England,Newcastle,English Premier League
+356,C. Atsu,1992/1/10,Ghana,Newcastle,English Premier League
+357,D. Gayle,1990/10/17,England,Newcastle,English Premier League
+358,S. Longstaff,1997/10/30,England,Newcastle,English Premier League
+359,K. Darlow,1990/10/8,England,Newcastle,English Premier League
+360,M. Longstaff,2000/3/21,England,Newcastle,English Premier League
+361,M. Gillespie,1992/3/27,England,Newcastle,English Premier League
+362,J. Murphy,1995/2/24,England,Newcastle,English Premier League
+363,R. Aarons,1995/11/16,England,Newcastle,English Premier League
+364,D. Barlaser,1997/1/18,England,Newcastle,English Premier League
+365,H. Saivet,1990/10/26,Senegal,Newcastle,English Premier League
+366,L. Cass,2000/2/27,England,Newcastle,English Premier League
+367,J. Young,2000/10/21,England,Newcastle,English Premier League
+368,S. Berge,1998/2/18,Norway,Sheffield United,English Premier League
+369,J. OConnell,1994/3/29,England,Sheffield United,English Premier League
+370,J. Egan,1992/10/20,Republic of Ireland,Sheffield United,English Premier League
+371,E. Stevens,1990/7/9,Republic of Ireland,Sheffield United,English Premier League
+372,G. Baldock,1993/3/9,England,Sheffield United,English Premier League
+373,C. Basham,1988/7/20,England,Sheffield United,English Premier League
+374,O. Norwood,1991/4/12,Northern Ireland,Sheffield United,English Premier League
+375,J. Fleck,1991/8/24,Scotland,Sheffield United,English Premier League
+376,J. Lundstram,1994/2/18,England,Sheffield United,English Premier League
+377,A. Ramsdale,1998/5/14,England,Sheffield United,English Premier League
+378,O. McBurnie,1996/6/4,Scotland,Sheffield United,English Premier League
+379,L. Mousset,1996/2/8,France,Sheffield United,English Premier League
+380,B. Osborn,1994/8/5,England,Sheffield United,English Premier League
+381,D. McGoldrick,1987/11/29,Republic of Ireland,Sheffield United,English Premier League
+382,B. Sharp,1986/2/5,England,Sheffield United,English Premier League
+383,J. Bogle,2000/7/27,England,Sheffield United,English Premier League
+384,M. Lowe,1997/5/11,England,Sheffield United,English Premier League
+385,P. Jagielka,1982/8/17,England,Sheffield United,English Premier League
+386,W. Foderingham,1991/1/14,England,Sheffield United,English Premier League
+387,J. Robinson,1993/9/1,England,Sheffield United,English Premier League
+388,M. Verrips,1996/12/3,Netherlands,Sheffield United,English Premier League
+389,E. Ampadu,2000/9/14,Wales,Sheffield United,English Premier League
+390,O. Burke,1997/4/7,Scotland,Sheffield United,English Premier League
+391,J. Rodwell,1991/3/11,England,Sheffield United,English Premier League
+392,S. Moore,1990/5/19,England,Sheffield United,English Premier League
+393,K. Bryan,1996/11/1,England,Sheffield United,English Premier League
+394,D. Parkhouse,1999/10/24,Northern Ireland,Sheffield United,English Premier League
+395,R. Slater,1999/9/11,England,Sheffield United,English Premier League
+396,K. Gordon,2002/5/24,England,Sheffield United,English Premier League
+397,J. Belehouan,2000/9/1,France,Sheffield United,English Premier League
+398,H. Boyes,1998/6/16,England,Sheffield United,English Premier League
+399,D. Ings,1992/7/23,England,Southampton,English Premier League
+400,J. Ward-Prowse,1994/11/1,England,Southampton,English Premier League
+401,N. Redmond,1994/3/6,England,Southampton,English Premier League
+402,R. Bertrand,1989/8/5,England,Southampton,English Premier League
+403,J. Bednarek,1996/4/12,Poland,Southampton,English Premier League
+404,J. Vestergaard,1992/8/3,Denmark,Southampton,English Premier League
+405,A. McCarthy,1989/12/3,England,Southampton,English Premier League
+406,M. Salisu,1999/4/17,Ghana,Southampton,English Premier League
+407,F. Forster,1988/3/17,England,Southampton,English Premier League
+408,S. Armstrong,1992/3/30,Scotland,Southampton,English Premier League
+409,M. Djenepo,1998/6/15,Mali,Southampton,English Premier League
+410,K. Walker-Peters,1997/4/13,England,Southampton,English Premier League
+411,J. Stephens,1994/1/27,England,Southampton,English Premier League
+412,W. Hoedt,1994/3/6,Netherlands,Southampton,English Premier League
+413,Oriol Romeu,1991/9/24,Spain,Southampton,English Premier League
+414,S. Boufal,1993/9/17,Morocco,Southampton,English Premier League
+415,C. Adams,1996/7/13,England,Southampton,English Premier League
+416,A. Gunn,1996/1/22,England,Southampton,English Premier League
+417,S. Long,1987/1/22,Republic of Ireland,Southampton,English Premier League
+418,G. Carrillo,1991/5/25,Argentina,Southampton,English Premier League
+419,Y. Valery,1999/2/22,France,Southampton,English Premier League
+420,J. Sims,1997/3/28,England,Southampton,English Premier League
+421,M. Obafemi,2000/7/6,Republic of Ireland,Southampton,English Premier League
+422,J. Hesketh,1996/3/27,England,Southampton,English Premier League
+423,S. McQueen,1995/2/6,England,Southampton,English Premier League
+424,W. Smallbone,2000/2/21,Republic of Ireland,Southampton,English Premier League
+425,K. Ramsay,2000/10/10,England,Southampton,English Premier League
+426,J. Vokins,2000/3/17,England,Southampton,English Premier League
+427,T. OConnor,1999/4/21,Republic of Ireland,Southampton,English Premier League
+428,N. Tella,1999/7/5,England,Southampton,English Premier League
+429,C. Slattery,1999/2/8,England,Southampton,English Premier League
+430,C. Klarer,2000/6/14,Austria,Southampton,English Premier League
+431,D. NLundulu,1999/2/5,England,Southampton,English Premier League
+432,H. Kane,1993/7/28,England,Tottenham,English Premier League
+433,H. Lloris,1986/12/26,France,Tottenham,English Premier League
+434,T. Alderweireld,1989/3/2,Belgium,Tottenham,English Premier League
+435,S. Bergwijn,1997/10/8,Netherlands,Tottenham,English Premier League
+436,D. Alli,1996/4/11,England,Tottenham,English Premier League
+437,G. Bale,1989/7/16,Wales,Tottenham,English Premier League
+438,Lucas Moura,1992/8/13,Brazil,Tottenham,English Premier League
+439,G. Lo Celso,1996/4/9,Argentina,Tottenham,English Premier League
+440,M. Doherty,1992/1/16,Republic of Ireland,Tottenham,English Premier League
+441,B. Davies,1993/4/24,Wales,Tottenham,English Premier League
+442,E. Lamela,1992/3/4,Argentina,Tottenham,English Premier League
+443,S. Aurier,1992/12/24,Ivory Coast,Tottenham,English Premier League
+444,H. Winks,1996/2/2,England,Tottenham,English Premier League
+445,D. Rose,1990/7/2,England,Tottenham,English Premier League
+446,M. Sissoko,1989/8/16,France,Tottenham,English Premier League
+447,E. Dier,1994/1/15,England,Tottenham,English Premier League
+448,P. Gazzaniga,1992/1/2,Argentina,Tottenham,English Premier League
+449,R. Sessegnon,2000/5/18,England,Tottenham,English Premier League
+450,Gedson Fernandes,1999/1/9,Portugal,Tottenham,English Premier League
+451,J. Foyth,1998/1/12,Argentina,Tottenham,English Premier League
+452,J. Hart,1987/4/19,England,Tottenham,English Premier League
+453,J. Tanganga,1999/3/31,England,Tottenham,English Premier League
+454,C. Carter-Vickers,1997/12/31,United States,Tottenham,English Premier League
+455,J. Clarke,2000/11/23,England,Tottenham,English Premier League
+456,A. Whiteman,1998/10/2,England,Tottenham,English Premier League
+457,G. Marsh,1998/11/5,England,Tottenham,English Premier League
+458,D. Cirkin,2002/4/6,England,Tottenham,English Premier League
+459,H. White,2001/9/19,England,Tottenham,English Premier League
+460,Matheus Pereira,1996/5/5,Brazil,West Brom,English Premier League
+461,S. Johnstone,1993/3/25,England,West Brom,English Premier League
+462,K. Gibbs,1989/9/26,England,West Brom,English Premier League
+463,M. Phillips,1991/3/13,Scotland,West Brom,English Premier League
+464,K. Grosicki,1988/6/8,Poland,West Brom,English Premier League
+465,J. Livermore,1989/11/14,England,West Brom,English Premier League
+466,G. Diangana,1998/4/19,England,West Brom,English Premier League
+467,S. Ajayi,1993/11/9,Nigeria,West Brom,English Premier League
+468,R. Sawyers,1991/11/2,Saint Kitts and Nevis,West Brom,English Premier League
+469,C. Robinson,1995/2/2,Republic of Ireland,West Brom,English Premier League
+470,K. Bartley,1991/5/22,England,West Brom,English Premier League
+471,A. Hegazi,1991/1/25,Egypt,West Brom,English Premier League
+472,C. Austin,1989/7/5,England,West Brom,English Premier League
+473,D. Furlong,1995/10/31,England,West Brom,English Premier League
+474,C. Townsend,1993/3/4,England,West Brom,English Premier League
+475,C. Gallagher,2000/2/6,England,West Brom,English Premier League
+476,H. Robson-Kanu,1989/5/21,Wales,West Brom,English Premier League
+477,L. Peltier,1986/12/11,England,West Brom,English Premier League
+478,D. OShea,1999/3/4,Republic of Ireland,West Brom,English Premier League
+479,K. Edwards,1998/2/17,England,West Brom,English Premier League
+480,D. Button,1989/2/27,England,West Brom,English Premier League
+481,R. Harper,2000/3/8,England,West Brom,English Premier League
+482,S. Field,1998/5/8,England,West Brom,English Premier League
+483,J. Bond,1993/5/19,England,West Brom,English Premier League
+484,J. Soule,2000/11/26,England,West Brom,English Premier League
+485,R. Richards,2003/9/27,England,West Brom,English Premier League
+486,G. Harmon,2000/12/8,England,West Brom,English Premier League
+487,S. Shotton,2000/11/10,England,West Brom,English Premier League
+488,O. Windsor,2001/9/17,England,West Brom,English Premier League
+489,Felipe Anderson,1993/4/15,Brazil,West Ham,English Premier League
+490,D. Rice,1999/1/14,England,West Ham,English Premier League
+491,Pablo Fornals,1996/2/22,Spain,West Ham,English Premier League
+492,M. Lanzini,1993/2/15,Argentina,West Ham,English Premier League
+493,M. Antonio,1990/3/28,England,West Ham,English Premier League
+494,J. Bowen,1996/12/20,England,West Ham,English Premier League
+495,I. Diop,1997/1/9,France,West Ham,English Premier League
+496,A. Masuaku,1993/11/7,DR Congo,West Ham,English Premier League
+497,R. Snodgrass,1987/9/7,Scotland,West Ham,English Premier League
+498,A. Ogbonna,1988/5/23,Italy,West Ham,English Premier League
+499,A. Cresswell,1989/12/15,England,West Ham,English Premier League
+500,A. Yarmolenko,1989/10/23,Ukraine,West Ham,English Premier League
+501,R. Fredericks,1992/10/10,England,West Ham,English Premier League
+502,J. Wilshere,1992/1/1,England,West Ham,English Premier League
+503,M. Noble,1987/5/8,England,West Ham,English Premier League
+504,D. Randolph,1987/5/12,Republic of Ireland,West Ham,English Premier League
+505,J. Cullen,1996/4/7,Republic of Ireland,West Ham,English Premier League
+506,D. Martin,1986/1/22,England,West Ham,English Premier League
+507,Xande Silva,1997/3/16,Portugal,West Ham,English Premier League
+508,N. Holland,1998/6/19,England,West Ham,English Premier League
+509,B. Johnson,2000/1/24,England,West Ham,English Premier League
+510,N. Trott,1998/11/21,England,West Ham,English Premier League
+511,C. Coventry,2000/3/25,Republic of Ireland,West Ham,English Premier League
+512,H. Ashby,2001/11/14,Scotland,West Ham,English Premier League
+513,O. Afolayan,1997/9/11,England,West Ham,English Premier League
+514,A. Alese,2001/1/17,England,West Ham,English Premier League
+515,Bernardo Rosa,2000/9/20,Brazil,West Ham,English Premier League
+516,Jonny,1994/3/3,Spain,Wolves,English Premier League
+517,W. Boly,1991/2/3,France,Wolves,English Premier League
+518,C. Coady,1993/2/25,England,Wolves,English Premier League
+519,L. Dendoncker,1995/4/15,Belgium,Wolves,English Premier League
+520,Daniel Podence,1995/10/21,Portugal,Wolves,English Premier League
+521,Pedro Neto,2000/3/9,Portugal,Wolves,English Premier League
+522,R. Bennett,1990/3/6,England,Wolves,English Premier League
+523,J. Ruddy,1986/10/24,England,Wolves,English Premier League
+524,D. Sanderson,1999/12/15,England,Wolves,English Premier League
+525,M. Kilman,1997/5/23,England,Wolves,English Premier League
+526,K. Hoever,2002/1/18,Netherlands,Wolves,English Premier League
+527,N. Ennis,1999/5/20,England,Wolves,English Premier League
+528,M. Shabani,1999/3/15,Germany,Wolves,English Premier League
+529,L. Matheson,2002/10/3,England,Wolves,English Premier League
+530,O. Rasmussen,1998/3/31,Denmark,Wolves,English Premier League
+531,S. Diallo,1999/6/10,England,Wolves,English Premier League
+532,Christian Marques,2003/3/15,Switzerland,Wolves,English Premier League
+533,E. Francis,1999/9/11,England,Wolves,English Premier League
+534,T. Perry,2001/7/15,England,Wolves,English Premier League
+535,L. Cundle,2002/4/26,England,Wolves,English Premier League
+536,L. Richards,2001/10/15,Republic of Ireland,Wolves,English Premier League

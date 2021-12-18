@@ -1,0 +1,98 @@
+﻿host,sName,ctName,capacity,yearOfBuilt,nickName,foundYear,officialSite
+Bayern Munich,Allianz Arena,Germany,75000,2002,The FCB,1900,https//fcbayern.com/en
+Dortmund,Westfalenstadion,Germany,81365,1974,The Black and Yellows,1909,https://www.bvb.de/
+RB Leipzig,Red Bull Arena,Germany,47069,2004,The Red Bulls,2009,http://www.dierotenbullen.com/
+Leverkusen,BayArena,Germany,30210,1958,The Companys Eleven,1904,http://www.bayer04.de/
+M.gladbach,Borussia-Park,Germany,54057,2004,The Colts,1900,http://www.borussia.de/
+Wolfsburg,Volkswagen Arena,Germany,30000,2002,The Wolves,1945,http://www.vfl-wolfsburg.de/
+Ein Frankfurt,Deutsche Bank Park,Germany,51500,1925,Slipper Kickers,1899,http://www.eintracht.de/
+Hoffenheim,Rhein-Neckar-Arena,Germany,30150,2007,From Kraichgau region,1899,http://www.achtzehn99.de/
+Hertha,Olympiastadion,Germany,74475,1936,The Old Lady,1892,http://www.herthabsc.de/
+Stuttgart,Mercedes-Benz Arena,Germany,60449,1897,The Reds,1893,http://www.vfb.de/
+Freiburg,Schwarzwald-Stadion,Germany,34700,2018,Breisgau Brazilians,1904,http://www.scfreiburg.com/
+Mainz,MEWA Arena,Germany,34034,2009,the 05ers,1905,http://www.mainz05.de/
+FC Koln,RheinEnergieStadion,Germany,50000,1921,The Billy Goats,1948,http://www.fc-koeln.de/
+Augsburg,WWK Arena,Germany,30660,2009,founders of the?Fuggerei,1907,http://www.fcaugsburg.de/
+Schalke 04,Veltins-Arena,Germany,62271,2001,The Miners,1904,http://www.schalke04.de/
+Werder Bremen,Weserstadion,Germany,42100,1947,The River Islanders,1899,https://www.werder.de/en/
+Union Berlin,Stadion An der Alten F?rsterei,Germany,22012,1920,The Iron Ones,1966,http://www.fc-union-berlin.de/
+Bielefeld,Schüco-Arena,Germany,26515,1926,The Blues,1905,http://www.arminia-bielefeld.de/
+Atalanta,Gewiss Stadium,Italy,25000,1928,La Dea,1907,https://www.atalanta.it/
+Benevento,Stadio Ciro Vigorito,Italy,16867,1979,Gli Stregoni,1929,https://www.beneventocalcio.club/
+Bologna,Stadio Renato DallAra,Italy,36462,1927,The Red and Blues,1909,http://www.bolognafc.it/
+Crotone,Sardegna Arena,Italy,16416,2017,The Pythagoreans,1910,http://www.fccrotone.it/
+Fiorentina,Stadio Ezio Scida,Italy,16640,1946,The Purples,1926,https://www.acffiorentina.com/it
+Genoa,Stadio Artemio Frenchi,Italy,45000,1931,The Griffin,1893,http://www.genoacfc.it/
+Verona,Stadio Luigi Ferraris,Italy,36600,1911,The Yellow and Blues,1903,http://www.hellasverona.it/
+Inter,Stadio Marcantonio Bentegodi,Italy,39371,1963,The Black and Blues,1908,http://www.inter.it/
+Juventus,San Siro,Italy,75923,1926,The Old Lady,1897,http://www.juventus.com/
+Lazio,Allianz Stadium,Italy,41507,2011,The White and Sky Blues,1900,https://www.sslazio.it/
+Milan,Stadio Olimpico,Italy,70634,1927,The Red and Blacks,1899,http://www.acmilan.com/
+Napoli,San Siro,Italy,75923,1926,The Blue,1926,http://www.sscnapoli.it/
+Parma,Stadio San Paolo,Italy,54726,1959,The Crusaders,1913,http://parmacalcio1913.com/
+Roma,Stadio Ennio Tardini,Italy,27906,1923,The She-Wolf,1927,http://www.asroma.com/
+Sampdoria,Stadio Olimpico,Italy,70634,1927,The Blue-circled,1946,https://www.sampdoria.it/en/
+Sassuolo,Stadio Luigi Ferraris,Italy,36599,1911,The Black and Greens,1920,http://www.sassuolocalcio.it/
+Spezia,Mapei Stadium,Italy,23717,1995,Little Eagles,1906,http://www.acspezia.com/
+Torino,Stadio Alberto Picco,Italy,10336,1919,The Bull,1906,http://torinofc.it/
+Udinese,Stadio Olimpico Grande Torino,Italy,27958,1933,The Friulians,1896,http://www.udinese.it/
+Angers,Stade Raymond Kopa,France,18752,1912,Le SCO,1919,http://www.angers-sco.fr/
+Bordeaux,Matmut Atlantique,France,42115,2015,The Girondins,1881,https://www.girondins.com/
+Brest,Stade Francis-Le Blé,France,15931,1922,The Pirates,1903,http://www.sb29.bzh/
+Dijon,Stade Gaston Gérard,France,15995,1934,The reds,1998,https://www.dfco.fr/
+Lens,Stade Bollaert-Delelis,France,37705,1933,The Blood and Gold,1906,https://www.rclens.fr/
+Lille,Pierre-Mauroy,France,50186,2012,The Mastiffs,1944,https://www.losc.fr/
+Lorient,Stade du Moustoir,France,18890,1959,The Merlucciidaes,1926,https://fclweb.fr/
+Lyon,Groupama Stadium,France,59186,2012,The Kids,1899,https://www.ol.fr/
+Marseille,Orange Vélodrome,France,67394,1935,The Phocaeans,1899,http://www.om.net/
+Metz,Stade Saint-Symphorien,France,25636,1923,The Maroons,1932,http://www.fcmetz.com/
+Monaco,Stade Louis II,Monaco,18523,1981,The Monégasques,1924,http://asmonaco.com/en/
+Montpellier,Stade de la Mosson,France,32900,1972,La Paillade,1919,http://www.mhscfoot.com/
+Nantes,Stade de la Beaujoire,France,35322,1984,The Yellow House,1943,https://www.fcnantes.com/
+Nice,Allianz Riviera,France,35624,2013,The Eaglets,1904,https://www.ogcnice.com/
+Nimes,Stade des Costières,France,18482,1989,The Crocodiles,1937,http://www.nimes-olympique.com/
+Paris SG,Parc des Princes,France,48583,1972,The Parisians,1970,http://www.psg.fr/
+Reims,Stade Auguste Delaune,France,21684,1935,The Red and Whites,1931,https://stade-de-reims.com/
+Rennes,Roazhon Park,France,29778,1912,The Rennais,1901,http://www.staderennais.com/
+St Etienne,Stade Geoffroy-Guichard,France,41965,1930,The Greens,1919,http://www.asse.fr/
+Strasbourg,Stade de la Meinau,France,29230,1914,The Blue and Whites,1906,https://www.rcstrasbourgalsace.fr/
+Alaves,Mendizorroza,Spain,19840,1924,The glorious one,1921,http://www.alaves.com/
+Ath Bilbao,San Mames,Spain,53289,2014,The Lions,1898,http://www.athletic-club.eus/en/home.html
+Ath Madrid,Wanda Metropolitano,Spain,68456,1993,Mattresses,1903,http://en.atleticodemadrid.com/
+Barcelona,Camp Nou,Spain,99354,1957,Blaugrana,1899,http://www.fcbarcelona.com/
+Betis,Ramon de Carranza,Spain,60721,1929,The Greens,1907,http://www.realbetisbalompie.es/
+Cadiz,Benito Villamarin,Spain,20724,1955,The Pirates,1910,http://www.cadizcf.com/
+Celta,Abanca-Balaidos,Spain,29000,1928,The Sky Blues,1923,https://rccelta.es/
+Eibar,Ipurua,Spain,8164,1947,The Gunsmiths,1940,http://www.sdeibar.com/
+Elche,Martinez Valero,Spain,33732,1976,The Ones from Elche,1923,http://www.elchecf.es/
+Getafe,Coliseum Alfonso Perez,Spain,17393,1998,Deep Blue Ones,1983,https://www.getafecf.com/
+Granada,Nuevo Los Carmenes,Spain,19336,1995,Nasrid,1931,http://www.granadacf.es/
+Huesca,El Alcoraz,Spain,7638,1972,Oscenses,1960,http://www.sdhuesca.es/
+Levante,Ciutat de Valencia,Spain,26354,1969,The Frogs,1909,http://www.levanteud.com/
+Osasuna,El Sadar,Spain,23576,1967,Gorritxoak,1920,http://www.osasuna.es/
+Real Madrid,Alfredo Di Stefano,Spain,6000,2006,The Meringues,1902,http://www.realmadrid.com/
+Sevilla,Ramon Sanchez Pizjuan,Spain,43883,1955,The White and Blues,1909,https://www.realsociedad.eus/en
+Sociedad,Anoeta,Spain,39500,1993,Blanquirrojos,1890,https://www.sevillafc.es/
+Valencia,Mestalla,Spain,55000,1923,The Bats,1919,http://www.valenciacf.com/
+Valladolid,Jose Zorrilla,Spain,28012,1982,Pucelle,1928,http://www.realvalladolid.es/
+Villarreal,Estadio de la Ceramica,Spain,24890,1923,The Yellow Submarine,1942,http://www.villarrealcf.es/
+Arsenal,Emirates Stadium,England,60260,2004,The Gunners,1886,http://www.arsenal.com
+Aston Villa,Aston Park,England,35016,2016,The Villans The Lions,1874,http://www.avfc.co.uk/
+Brighton,Olympic Stadium,England,25486,1924,Seagulls,1901,http://www.seagulls.co.uk/
+Burnley,Turf Moor Stadium,England,19920,1922,The Clarets,1882,http://www.burnleyfootballclub.com
+Chelsea,Stamford Bridge,England,62850,2016,The Blues,1905,http://www.chelseafc.co.uk/
+Crystal Palace,Selhurst Park Stadium,England,52305,1892,The Eagles,1905,http://www.cpfc.premiumtv.co.uk/
+Everton,Goodison Park,England,39414,1892,The Toffees,1878,http://www.evertonfc.com/
+Fulham,Craven Cottage,England,25700,1896,The Cottagers,1879,.https://www.fulhamfc.com/
+Leeds,Elland Road,England,37792,1897,The Peacocks,1904,http://www.leedsunited.com
+Leicester,American Express Community Stadium,England,31800,2008,The Foxes,1884,http://www.lcfc.com/
+Liverpool,Anfield Stadium,England,53394,1884,The Reds,1892,http://www.liverpoolfc.tv/
+Man City,City of Manchester Stadium,England,53400,1999,The Citizens,1880,http://www.mcfc.co.uk/
+Man United,Old Trafford,England,74140,1939,The Red Devils,1878,http://www.manutd.com/
+Newcastle,St James Park,England,32384,1980,The Magpies,1881,http://www.nufc.co.uk/
+Sheffield United,Bramall Lane,England,32050,1855,The Blades,1889,http://www.sufc.co.uk/
+Southampton,St. Marys Stadium,England,41837,1876,The Saints,1885,http://www.saintsfc.co.uk
+Tottenham,Tottenham Hotspur Stadium,England,21944,1883,The Lilywhites,1882,http://www.spurs.co.uk/
+West Brom,The Hawthorns,England,26500,1900,The Baggies,1878,https://www.wba.co.uk/
+West Ham,Griffin Park,England,12300,1904,the hammers,1895,http://www.whufc.com/
+Wolves,Molineux Stadium,England,32050,1889,The Wanderers,1877,http://www.wolves.co.uk

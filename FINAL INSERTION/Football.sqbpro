@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/xh/Desktop/2021 FALL/COMP3380/PROJECT/Football-Database-main/Football.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="125"/><column_width id="3" width="2400"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,6:mainattend"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="attend" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="1"/></sort><column_widths><column index="1" value="176"/><column index="2" value="144"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="belong" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="166"/><column index="2" value="154"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="club" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="2" value="200"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="country" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="190"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="event" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="261"/><column index="2" value="133"/><column index="3" value="121"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="friendly" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="50"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="homeCourt" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="279"/><column index="2" value="197"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="hostStadium" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="200"/><column index="2" value="245"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="league" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="105"/><column index="2" value="58"/><column index="3" value="42"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="match" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="66"/><column index="2" value="129"/><column index="3" value="169"/><column index="4" value="119"/><column index="5" value="191"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="matchTable" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="7" mode="1"/></sort><column_widths><column index="1" value="129"/><column index="2" value="203"/><column index="3" value="133"/><column index="4" value="135"/><column index="5" value="132"/><column index="6" value="111"/><column index="7" value="115"/><column index="8" value="82"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="participate" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="302"/><column index="2" value="321"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="people" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="230"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="player" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="28"/><column index="2" value="119"/><column index="3" value="154"/><column index="4" value="133"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="referee" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="65"/><column index="2" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="rounds" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="42"/><column index="2" value="122"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="134"/><column index="2" value="135"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="stadium" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="247"/><column index="2" value="272"/><column index="3" value="74"/><column index="4" value="98"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tournament" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="383"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="schemas.sql">create table people(
+	ID INTEGER PRIMARY KEY AUTOINCREMENT
+);
+
+
+create table country(
+	ctName text primary KEY
+);
+
+create table club(
+	cName text PRIMARY KEY,
+	nickName text,
+	foundYear INTEGER,
+	ctName TEXT REFERENCES country(ctName),
+	officialSite text
+);
+
+create table rounds(
+	size INTEGER PRIMARY KEY,
+	numberOfRounds INTEGER
+);
+
+create table event(
+	eName text PRIMARY KEY,
+	season text,
+	cName TEXT REFERENCES club(cName)
+);
+
+create table friendly(
+	eName text PRIMARY KEY REFERENCES event(eName)
+);
+
+create table tournament(
+	eName text PRIMARY KEY REFERENCES event(eName)
+);
+
+create table league(
+	eName text PRIMARY KEY REFERENCES event(eName),
+	ctName text REFERENCES country(ctName),
+	size INTEGER REFERENCES rounds(size)
+
+);
+
+CREATE TABLE matchTable(
+	host text REFERENCES club(cName),
+	visit text REFERENCES club(cName),
+	matchDate text,
+	eName text REFERENCES event(eName),
+	awayGoals INTEGER,
+	homeGoals INTEGER,
+	awayBooks INTEGER,
+	homeBooks INTEGER,
+	PRIMARY KEY(host, visit, matchDate, eName)
+);
+
+create table match(
+	matchID INTEGER PRIMARY KEY AUTOINCREMENT,
+	matchDate INTEGER REFERENCES matchTable(matchDate),
+	host text REFERENCES matchTable(host),
+	visit text REFERENCES matchTable(visit),
+	eName text REFERENCES event(eName)
+);
+
+
+create table stadium(
+	sName text PRIMARY KEY,
+	ctName TEXT REFERENCES country(ctName),
+	capacity INTEGER,
+	yearOfBuilt INTEGER
+);
+
+
+create table hostStadium(
+	match INTEGER PRIMARY KEY REFERENCES match(matchID),
+	sName text REFERENCES stadium(sName)
+);
+
+
+create table player(
+	ID INTEGER PRIMARY KEY REFERENCES people(ID),
+	cName text REFERENCES club(cName),
+	pName text,
+	DOB TEXT
+);
+
+create table referee(
+	ID INTEGER PRIMARY KEY REFERENCES people(ID),
+	rName text
+);
+
+
+create table belong(
+	ID INTEGER REFERENCES player(ID),
+	ctName text REFERENCES country(ctName),
+	PRIMARY KEY(ID,ctName)
+);
+
+create table participate(
+	cName TEXT REFERENCES club(cName),
+	eName text REFERENCES event(eName),
+	PRIMARY KEY(cName, eName)
+);
+
+create table attend(
+	ID INTEGER REFERENCES people(ID),
+	matchID INTEGER REFERENCES match(matchID),
+	PRIMARY KEY(ID, matchID)
+);
+
+create table homeCourt(
+	sName text REFERENCES stadium(sName),
+	cName text REFERENCES club(cName),
+	PRIMARY KEY(sName, cName)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</sql><sql name="SQL 3">
+INSERT INTO event (eName,season,cName) VALUES ('UEFA Champions League','2019','Bayern Munich');
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
