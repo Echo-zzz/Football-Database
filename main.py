@@ -1,47 +1,64 @@
 import sqlite3
-from itertools import count
 from tkinter import *
 from tkinter.ttk import *
 import table as ta
 import csv
 import tkinter.messagebox as ms
+import os
 
 
 class main(Frame):
     def __init__(self, master=None):
         Frame.__init__(self, master)
-
+        global screenwidth, screenheight
+        width = 1000
+        heigh = 1000
+        screenwidth = self.winfo_screenwidth()
+        screenheight = self.winfo_screenheight()
         self.master.title('FootBall')
-        self.master.geometry('1000x1000')
-
+        self.master.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
+        self.label2 = Label(self.master, text='Welcome to Football Enquiry System !',
+                            font=('microsoft yahei', 25, 'bold'))
+        self.label2.place(relx=0.2, rely=0.15, relwidth=0.8, relheight=0.047)
         self.connect()
         self.eventList()
         self.show()
-        self.SELECT()
+        self.helpBottom()
 
     def connect(self):
         global DB
-        try:
+        if os.path.exists("Football.db"):
             self.DB = sqlite3.connect("Football.db")
             self.cursor = self.DB.cursor()
-            print("success!")
-        except:
-            print("warning, connect fail!")
+        else:
+            ms.showerror("Error!", "Database may not be connected successfully, check local database file!")
+            self.master.destroy()
 
     def eventList(self):
-        global chose
+
         self.stringvar = StringVar()
+        self.label1 = Label(self.master, text='Select the event you want to query',
+                            font=('microsoft yahei', 14, 'bold'))
+        self.label1.place(relx=0.3, rely=0.3, relwidth=0.45, relheight=0.047)
         self.pull = Combobox(self.master, text=self.stringvar, state='readonly')
-        self.stringvar = ["Get the name of the stadiums a specific player has been to", "Number of home team wins", "Get existial clubs that participate a specific event",
-                          "Find all players without a last name and not from the England", "Number of expatriate players per club", "Teams that score more goals at home than on the road",
-                          "The team that has not lost at home in the league", "Number of shutouts", "Winning percentage of home games enforced by each referee", "Referees who have participated in both tournament and league"]
+        self.stringvar = ["* Get the name of the stadiums a specific player has been to", "Number of home team wins",
+                          "* Get exist clubs that participate a specific event",
+                          "Find all players without a last name and not from the England",
+                          "Number of expatriate players per club",
+                          "Teams that score more goals at home than on the road",
+                          "The team that has not lost at home in the league",
+                          "Times of keep a clean sheet in each club",
+                          "Winning percentage of home games enforced by each referee",
+                          "Referees who have participated in both tournament and league",
+                          "Find the team with colors in their nickname"]
         self.pull["value"] = [i for i in self.stringvar]
         self.pull.current(0)
-        self.pull.place(relx=0.3, rely=0.2, relwidth=0.45, relheight=0.047)
+        self.pull.place(relx=0.3, rely=0.34, relwidth=0.45, relheight=0.047)
+        self.SELECT()
 
     def SELECT(self):
         self.button2 = Button(self.master, text='Go', command=self.reply)
-        self.button2.place(relx=0.4, rely=0.4, relwidth=0.214, relheight=0.095)
+        self.button2.place(relx=0.4, rely=0.45, relwidth=0.2, relheight=0.08)
 
     def SELECT2(self):
         self.button3 = Button(self.jump, text='Go', command=self.reply2)
@@ -71,7 +88,8 @@ class main(Frame):
             self.eventPage(8)
         if chose == self.stringvar[9]:
             self.eventPage(9)
-
+        if chose == self.stringvar[10]:
+            self.eventPage(10)
         self.master.destroy()
 
     def reply2(self):
@@ -81,23 +99,26 @@ class main(Frame):
     def reply3(self):
         self.outputCSV()
 
-
     def eventPage(self, inx):
-        self.top = Tk(CENTER)
-        self.top.title("output")
-        self.top.geometry('1000x500')
+        self.top = Tk()
+        width = 1000
+        heigh = 500
+        self.top.title("Output - " + self.stringvar[inx])
+        self.top.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
         self.event(inx)
 
     def chosePage(self, index):
         self.jump = Tk()
-        self.jump.geometry('500x500')
+        width = 500
+        heigh = 500
+        self.jump.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
         global which
         which = index
         if which == 0:
-            self.jump.title("chose a Player")
+            self.jump.title("Chose a Player")
             self.cursor.execute("SELECT pName FROM player;")
         if which == 2:
-            self.jump.title("chose a Event")
+            self.jump.title("Chose a Event")
             self.cursor.execute("SELECT eName FROM event;")
 
         self.stringvar2 = StringVar()
@@ -112,8 +133,9 @@ class main(Frame):
     def event(self, index):
 
         global SQL
-
         # here to SQL
+        global eventIdx
+        eventIdx = index
         if index == 0:
             SQL = "select distinct sName as Stdium, pName as Player from player " \
                   "natural join club join match " \
@@ -135,8 +157,7 @@ class main(Frame):
         if index == 4:
             SQL = " SELECT cName, count(pName) as foreignPlayer FROM player NATURAL join belong where player.cName in  " \
                   "(SELECT cName from club NATURAL join country  " \
-                  "where club.ctName!=belong.ctName) GROUP by cName order by foreignPlayer " \
-
+                  "where club.ctName!=belong.ctName) GROUP by cName order by foreignPlayer "
         if index == 5:
             SQL = "SELECT cName, SUM(case when m.host = cName then homeGoals else 0 end) " \
                   "AS HomeGoals,  SUM(case when m.visit = cName then awayGoals else 0 end) " \
@@ -168,6 +189,16 @@ class main(Frame):
                   "AND EXISTS " \
                   "(SELECT matchID FROM match m NATURAL JOIN matchTable NATURAL JOIN attend a " \
                   "WHERE a.ID = Referee.ID AND m.eName = 'premier league')"
+        if index == 10:
+            SQL = "SELECT cName,nickName FROM club c where lower(c.nickName) " \
+                  "LIKE '%red%' or lower(c.nickName) like '%black%' " \
+                  "UNION " \
+                  "select cName,nickName from club c where lower(c.nickName) " \
+                  "like '%blue%'  or  lower(c.nickName) like '%white%' " \
+                  "UNION select cName,nickName from club c where lower(c.nickName) like '%green%'"
+        if index == 11:
+            SQL = ""
+
         # here to SQL
 
         global column
@@ -187,7 +218,8 @@ class main(Frame):
         for row in data:
             self.list.insert("", count, text="{}".format(count), values=row)
             count = count + 1
-        self.list.pack()
+        self.list.place(relx=0.22, rely=0.1, relwidth=0.62, relheight=0.5)
+
         self.back()
         self.outputBottom()
 
@@ -196,7 +228,6 @@ class main(Frame):
         self.button3.place(relx=0.2, rely=0.8, relwidth=0.2, relheight=0.05)
 
     def outputCSV(self):
-
         root = Tk()
         root.withdraw()
         try:
@@ -211,8 +242,42 @@ class main(Frame):
             ms.showerror("Error!", "Should close same csv file window! before you make a new one ")
         root.destroy()
 
+    def helpBottom(self):
+        self.button6 = Button(self.master, text='?', command=self.reply4)
+        self.button6.place(relx=0.3, rely=0.8, relwidth=0.05, relheight=0.05)
+
+    def reply4(self):
+        self.helpPage()
+
+    def helpPage(self):
+        width = 600
+        heigh = 450
+        self.help = Tk()
+        self.help.title("READ ME")
+        self.help.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2.6, (screenheight - heigh) / 1.3))
+        # infos of helpPage
+        self.label3 = Label(self.help, text='1.* means there are next step that for choosing specific options',
+                            font=('times', 12, 'bold'))
+        self.label3.place(relx=0, rely=0.04, relwidth=1, relheight=0.047)
+
+        self.label4 = Label(self.help,
+                            text='  eg.1st Event - Get the name of the stadiums a specific player has been to. '
+                                 'You need',
+                            font=('times', 12, 'bold'))
+        self.label4.place(relx=0, rely=0.09, relwidth=1, relheight=0.047)
+
+        self.label5 = Label(self.help,
+                            text='  to specify an person to query, chose willian, will show all data about willian ',
+                            font=('times', 12, 'bold'))
+        self.label5.place(relx=0, rely=0.14, relwidth=1, relheight=0.047)
+
+        self.label6 = Label(self.help, text='2.There are only two events have data - premier league, UEFA Champions '
+                                            'League',
+                            font=('times', 12, 'bold'))
+        self.label6.place(relx=0, rely=0.19, relwidth=1, relheight=0.047)
+
     def cancel(self):
-        self.button5 = Button(self.jump, text='cancel', command=self.cancelBottom)
+        self.button5 = Button(self.jump, text='Cancel', command=self.cancelBottom)
         self.button5.place(relx=0.6, rely=0.8, relwidth=0.2, relheight=0.05)
 
     def cancelBottom(self):
@@ -220,12 +285,15 @@ class main(Frame):
         self.__init__()
 
     def back(self):
-        self.button4 = Button(self.top, text='back', command=self.backBottom)
+        self.button4 = Button(self.top, text='Back', command=self.backBottom)
         self.button4.place(relx=0.6, rely=0.8, relwidth=0.2, relheight=0.05)
 
     def backBottom(self):
         self.top.destroy()
-        self.__init__()
+        if eventIdx == 0 or eventIdx == 2:
+            self.chosePage(eventIdx)
+        else:
+            self.__init__()
 
     def show(self):
         self.button = Button(self.master, text='Show all table details', command=self.showBottom)

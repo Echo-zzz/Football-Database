@@ -3,11 +3,18 @@ from tkinter import *
 from tkinter.ttk import *
 import main as main
 
+
 class Club(Frame):
-    def __init__(self, master=None):
+    def __init__(self, master=None, **kw):
         Frame.__init__(self, master)
-        self.master.title('main')
-        self.master.geometry('500x500')
+        super().__init__(master, **kw)
+        global screenwidth, screenheight
+        width = 500
+        heigh = 500
+        screenwidth = self.winfo_screenwidth()
+        screenheight = self.winfo_screenheight()
+        self.master.title('Tables')
+        self.master.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
         self.connect()
         self.whichTable()
         self.SELECT()
@@ -16,6 +23,14 @@ class Club(Frame):
     def back(self):
         self.button2 = Button(self.master, text='back', command=self.backBottom)
         self.button2.place(relx=0.6, rely=0.8, relwidth=0.2, relheight=0.05)
+
+    def back2(self):
+        self.button3 = Button(self.top, text='back', command=self.backBottom2)
+        self.button3.place(relx=0.66, rely=0.8, relwidth=0.2, relheight=0.05)
+
+    def backBottom2(self):
+        self.top.destroy()
+        Club().__init__()
 
     def backBottom(self):
         self.master.destroy()
@@ -33,20 +48,24 @@ class Club(Frame):
 
     def reply(self):
         self.output()
+        self.master.destroy()
 
     def SELECT(self):
 
-        self.button = Button(self.master, text='go ahead', command=self.reply)
+        self.button = Button(self.master, text='Go ahead', command=self.reply)
         self.button.place(relx=0.4, rely=0.4, relwidth=0.214, relheight=0.095)
 
     def output(self):
         self.top = Tk()
-        self.top.title("output")
-        self.top.geometry('1000x500')
+        self.top.title("Table - " + self.pull.get())
+        width = 1000
+        heigh = 500
+        self.top.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
         self.list = Treeview(self.top)
         self.showAll()
         self.list.pack()
-        self.INSERT()
+        # self.INSERT()
+        self.back2()
 
     def connect(self):
         global DB
@@ -58,7 +77,6 @@ class Club(Frame):
             print("warning, connect fail!")
 
     def INSERT(self):
-
         self.enter = Entry(self.top)
         self.enter.place(relx=0.4, rely=0.7, relwidth=0.214, relheight=0.095)
 
