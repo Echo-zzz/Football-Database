@@ -17,9 +17,9 @@ class main(Frame):
         screenheight = self.winfo_screenheight()
         self.master.title('FootBall')
         self.master.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
-        self.label2 = Label(self.master, text='Welcome to Football Enquiry System !',
+        self.label2 = Label(self.master, text='Welcome to The Soccer Data Base',
                             font=('microsoft yahei', 25, 'bold'))
-        self.label2.place(relx=0.2, rely=0.15, relwidth=0.8, relheight=0.047)
+        self.label2.place(relx=0.25, rely=0.15, relwidth=0.8, relheight=0.047)
         self.connect()
         self.eventList()
         self.show()
@@ -270,11 +270,6 @@ class main(Frame):
                             text='  to specify an person to query, chose willian, will show all data about willian ',
                             font=('times', 12, 'bold'))
         self.label5.place(relx=0, rely=0.14, relwidth=1, relheight=0.047)
-
-        self.label6 = Label(self.help, text='2.There are only two events have data - premier league, UEFA Champions '
-                                            'League',
-                            font=('times', 12, 'bold'))
-        self.label6.place(relx=0, rely=0.19, relwidth=1, relheight=0.047)
 
     def cancel(self):
         self.button5 = Button(self.jump, text='Cancel', command=self.cancelBottom)
