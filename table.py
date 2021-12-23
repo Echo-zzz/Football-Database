@@ -4,7 +4,6 @@ from tkinter.ttk import *
 import main as main
 import tkinter.messagebox as ms
 import csv
-import os
 
 class Club(Frame):
     def __init__(self, master=None, **kw):
