@@ -69,6 +69,8 @@ class main(Frame):
     def reply(self):
         # everytime join a new event, create a new
         global chose
+        global chose2
+        chose2 = ""
         chose = self.pull.get()
         if chose == self.stringvar[0]:
             self.chosePage(0)
@@ -98,7 +100,7 @@ class main(Frame):
 
     def reply2(self):
         global chose2
-        chose2 = self.pull2.get()
+        chose2 = " - "+ self.pull2.get()
         self.eventPage(which)
         self.jump.destroy()
 
@@ -243,13 +245,13 @@ class main(Frame):
         root.withdraw()
 
         try:
-            with open(chose + " - " + chose2 + ".csv", "w", newline='') as file:
+            with open(chose + chose2 + ".csv", "w", newline='') as file:
                 self.csv_writer = csv.writer(file, quoting=csv.QUOTE_ALL)
                 self.csv_writer.writerow(column)
                 data = self.cursor.execute(SQL)
                 for row in data:
                     self.csv_writer.writerow(row)
-            ms.showinfo("Success!", "Output csv file: \"" + chose + " - " + chose2 + ".csv\"")
+            ms.showinfo("Success!", "Output csv file: \"" + chose + chose2 + ".csv\"")
         except:
             ms.showerror("Error!", "Should close same csv file window! before you make a new one ")
         root.destroy()
