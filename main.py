@@ -41,9 +41,9 @@ class main(Frame):
                             font=('microsoft yahei', 14, 'bold'))
         self.label1.place(relx=0.35, rely=0.28, relwidth=0.45, relheight=0.047)
         self.pull = Combobox(self.master, text=self.stringvar, state='readonly')
-        self.stringvar = ["* Get the name of the stadiums a specific player has been to",
+        self.stringvar = ["Get the name of the stadiums a specific player has been to",
                           "Number of home team wins",
-                          "* Get exist clubs that participate a specific event",
+                          "Get exist clubs that participate a specific event",
                           "Find all players without a last name and not from the England",
                           "Number of expatriate players per club",
                           "Teams that score more goals at home than on the road",
@@ -265,7 +265,7 @@ class main(Frame):
         self.help.title("READ ME")
         self.help.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2.6, (screenheight - heigh) / 1.3))
         # infos of helpPage
-        self.label3 = Label(self.help, text='1.* means there are next step that for choosing specific options',
+        self.label3 = Label(self.help, text='1. specific means there are next step that for choosing specific options',
                             font=('times', 12, 'bold'))
         self.label3.place(relx=0, rely=0.04, relwidth=1, relheight=0.047)
 
