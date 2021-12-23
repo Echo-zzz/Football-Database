@@ -63,9 +63,12 @@ class Club(Frame):
         self.top.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
         self.list = Treeview(self.top)
         self.showAll()
-        self.list.pack()
+        # self.label1 = Label(self.top, text=self.pull.get(),
+        #                     font=('', 15, 'bold'))
+        # self.label1.place(relx=0.5, rely=0.02, relwidth=0.45, relheight=0.047)
         # self.INSERT()
         self.back2()
+        self.list.place(relx=0.22, rely=0.1, relwidth=0.62, relheight=0.5)
 
     def connect(self):
         global DB

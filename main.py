@@ -17,7 +17,7 @@ class main(Frame):
         screenheight = self.winfo_screenheight()
         self.master.title('FootBall')
         self.master.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
-        self.label2 = Label(self.master, text='Welcome to The Soccer DataBase',
+        self.label2 = Label(self.master, text='Welcome to The Soccer Data Base',
                             font=('microsoft yahei', 25, 'bold'))
         self.label2.place(relx=0.25, rely=0.15, relwidth=0.8, relheight=0.047)
         self.connect()
