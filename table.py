@@ -2,7 +2,9 @@ import sqlite3
 from tkinter import *
 from tkinter.ttk import *
 import main as main
-
+import tkinter.messagebox as ms
+import csv
+import os
 
 class Club(Frame):
     def __init__(self, master=None, **kw):
@@ -47,6 +49,8 @@ class Club(Frame):
         self.pull.place(relx=0.4, rely=0.2, relwidth=0.214, relheight=0.055)
 
     def reply(self):
+        global chose
+        chose = self.pull.get()
         self.output()
         self.master.destroy()
 
@@ -69,6 +73,7 @@ class Club(Frame):
         # self.INSERT()
         self.back2()
         self.list.place(relx=0.025, rely=0.1, relwidth=0.95, relheight=0.5)
+        self.outputBottom()
 
     def connect(self):
         global DB
@@ -79,6 +84,29 @@ class Club(Frame):
         except:
             print("warning, connect fail!")
 
+    def outputBottom(self):
+        self.button3 = Button(self.top, text='Make CSV', command=self.reply3)
+        self.button3.place(relx=0.2, rely=0.8, relwidth=0.2, relheight=0.05)
+
+    def reply3(self):
+        self.outputCSV()
+
+    def outputCSV(self):
+        root = Tk()
+        root.withdraw()
+        try:
+            with open( chose + ".csv", "w", newline='') as file:
+                self.csv_writer = csv.writer(file, quoting=csv.QUOTE_ALL)
+                self.csv_writer.writerow(column)
+                data = self.cursor.execute(sql)
+                for row in data:
+                    self.csv_writer.writerow(row)
+            ms.showinfo("Success!", "Output csv file: \"" + chose + ".csv\"")
+        except:
+            ms.showerror("Error!", "Should close same csv file window! before you make a new one ")
+        root.destroy()
+
+
     def INSERT(self):
         self.enter = Entry(self.top)
         self.enter.place(relx=0.4, rely=0.7, relwidth=0.214, relheight=0.095)
@@ -88,6 +116,8 @@ class Club(Frame):
         self.cursor.execute(sql)
 
     def showAll(self):
+        global column
+        global sql
         sql = "SELECT * from '%s'" % self.pull.get()
         self.cursor.execute(sql)
         data = self.cursor.fetchall()
