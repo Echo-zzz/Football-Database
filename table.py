@@ -58,7 +58,7 @@ class Club(Frame):
     def output(self):
         self.top = Tk()
         self.top.title("Table - " + self.pull.get())
-        width = 1000
+        width = 1300
         heigh = 500
         self.top.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
         self.list = Treeview(self.top)
@@ -68,7 +68,7 @@ class Club(Frame):
         # self.label1.place(relx=0.5, rely=0.02, relwidth=0.45, relheight=0.047)
         # self.INSERT()
         self.back2()
-        self.list.place(relx=0.22, rely=0.1, relwidth=0.62, relheight=0.5)
+        self.list.place(relx=0.025, rely=0.1, relwidth=0.95, relheight=0.5)
 
     def connect(self):
         global DB

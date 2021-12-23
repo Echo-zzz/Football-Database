@@ -19,7 +19,7 @@ class main(Frame):
         self.master.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
         self.label2 = Label(self.master, text='Welcome to The Soccer Data Base',
                             font=('microsoft yahei', 25, 'bold'))
-        self.label2.place(relx=0.25, rely=0.15, relwidth=0.8, relheight=0.047)
+        self.label2.place(relx=0.245, rely=0.15, relwidth=0.8, relheight=0.047)
         self.connect()
         self.eventList()
         self.show()
@@ -39,9 +39,10 @@ class main(Frame):
         self.stringvar = StringVar()
         self.label1 = Label(self.master, text='Select the event you want to query',
                             font=('microsoft yahei', 14, 'bold'))
-        self.label1.place(relx=0.3, rely=0.3, relwidth=0.45, relheight=0.047)
+        self.label1.place(relx=0.35, rely=0.28, relwidth=0.45, relheight=0.047)
         self.pull = Combobox(self.master, text=self.stringvar, state='readonly')
-        self.stringvar = ["* Get the name of the stadiums a specific player has been to", "Number of home team wins",
+        self.stringvar = ["* Get the name of the stadiums a specific player has been to",
+                          "Number of home team wins",
                           "* Get exist clubs that participate a specific event",
                           "Find all players without a last name and not from the England",
                           "Number of expatriate players per club",
@@ -50,7 +51,8 @@ class main(Frame):
                           "Times of keep a clean sheet in each club",
                           "Winning percentage of home games enforced by each referee",
                           "Referees who have participated in both tournament and league",
-                          "Find the team with colors in their nickname"]
+                          "Find the team with colors in their nickname",
+                          "Find the club and its home stadium were established in the same year"]
         self.pull["value"] = [i for i in self.stringvar]
         self.pull.current(0)
         self.pull.place(relx=0.3, rely=0.34, relwidth=0.45, relheight=0.047)
@@ -58,7 +60,7 @@ class main(Frame):
 
     def SELECT(self):
         self.button2 = Button(self.master, text='Go', command=self.reply)
-        self.button2.place(relx=0.4, rely=0.45, relwidth=0.2, relheight=0.08)
+        self.button2.place(relx=0.425, rely=0.45, relwidth=0.2, relheight=0.08)
 
     def SELECT2(self):
         self.button3 = Button(self.jump, text='Chose', command=self.reply2)
@@ -90,6 +92,8 @@ class main(Frame):
             self.eventPage(9)
         if chose == self.stringvar[10]:
             self.eventPage(10)
+        if chose == self.stringvar[11]:
+            self.eventPage(11)
         self.master.destroy()
 
     def reply2(self):
@@ -101,7 +105,7 @@ class main(Frame):
 
     def eventPage(self, inx):
         self.top = Tk()
-        width = 1000
+        width = 1100
         heigh = 500
         self.top.title("Output - " + self.stringvar[inx])
         self.top.geometry('%dx%d+%d+%d' % (width, heigh, (screenwidth - width) / 2, (screenheight - heigh) / 2))
@@ -197,7 +201,12 @@ class main(Frame):
                   "like '%blue%'  or  lower(c.nickName) like '%white%' " \
                   "UNION select cName,nickName from club c where lower(c.nickName) like '%green%'"
         if index == 11:
-            SQL = ""
+            SQL = "SELECT homeCourt.cName as clubName, foundYear," \
+                  " homeCourt.sName as stadiumName, yearOfBuilt  " \
+                  "from club LEFT join homeCourt on club.cName = homeCourt.cName " \
+                  "left join stadium as s on s.sName = homeCourt.sName " \
+                  "where yearOfBuilt in " \
+                  "(SELECT stadium.yearOfBuilt from stadium where club.foundYear = stadium.yearOfBuilt)"
 
         # here to SQL
 
@@ -218,7 +227,7 @@ class main(Frame):
         for row in data:
             self.list.insert("", count, text="{}".format(count), values=row)
             count = count + 1
-        self.list.place(relx=0.22, rely=0.1, relwidth=0.62, relheight=0.5)
+        self.list.place(relx=0.025, rely=0.1, relwidth=0.95, relheight=0.5)
 
         self.back()
         self.outputBottom()
