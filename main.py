@@ -61,7 +61,7 @@ class main(Frame):
         self.button2.place(relx=0.4, rely=0.45, relwidth=0.2, relheight=0.08)
 
     def SELECT2(self):
-        self.button3 = Button(self.jump, text='Go', command=self.reply2)
+        self.button3 = Button(self.jump, text='Chose', command=self.reply2)
         self.button3.place(relx=0.4, rely=0.5, relwidth=0.214, relheight=0.095)
 
     def reply(self):
