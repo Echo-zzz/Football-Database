@@ -94,7 +94,7 @@ class Club(Frame):
         root = Tk()
         root.withdraw()
         try:
-            with open( chose + ".csv", "w", newline='') as file:
+            with open(chose + ".csv", "w") as file:
                 self.csv_writer = csv.writer(file, quoting=csv.QUOTE_ALL)
                 self.csv_writer.writerow(column)
                 data = self.cursor.execute(sql)

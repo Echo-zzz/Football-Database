@@ -245,7 +245,7 @@ class main(Frame):
         root.withdraw()
 
         try:
-            with open(chose + chose2 + ".csv", "w", newline='') as file:
+            with open(chose + chose2 + ".csv", "w") as file:
                 self.csv_writer = csv.writer(file, quoting=csv.QUOTE_ALL)
                 self.csv_writer.writerow(column)
                 data = self.cursor.execute(SQL)
