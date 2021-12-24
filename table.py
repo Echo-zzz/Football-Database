@@ -6,9 +6,8 @@ import tkinter.messagebox as ms
 import csv
 
 class Club(Frame):
-    def __init__(self, master=None, **kw):
+    def __init__(self, master=None):
         Frame.__init__(self, master)
-        super().__init__(master, **kw)
         global screenwidth, screenheight
         width = 500
         heigh = 500
