@@ -40,7 +40,8 @@ class Club(Frame):
         self.stringvar = StringVar()
         self.pull = Combobox(self.master, text=self.stringvar, state='readonly')
         self.cursor.execute("SELECT name FROM sqlite_master where type='table' order by name;")
-        tableName = self.cursor.fetchall()
+        # tableName = self.cursor.fetchall()
+        tableName = [tableName[0] for tableName in self.cursor.fetchall()]
         print(tableName)
         self.pull["value"] = tableName
         self.pull.current(0)
@@ -116,7 +117,7 @@ class Club(Frame):
     def showAll(self):
         global column
         global sql
-        sql = "SELECT * from '%s'" % self.pull.get()
+        sql = "SELECT * from '%s'" % chose
         self.cursor.execute(sql)
         data = self.cursor.fetchall()
         column = [column[0] for column in self.cursor.description]  # return the heading name
